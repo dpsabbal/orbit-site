@@ -3,549 +3,1473 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Orbit Technologies — Smart Software for Indian Businesses</title>
-<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<title>Orbit Technologies — Simplifying Business. Powering Growth.</title>
+<!-- PRIMARY META TAGS -->
+<title>Orbit Technologies — Customised Software Built After Understanding 
+Your Business | Amritsar</title>
+
+<meta name="description" content="We don't sell standard software. 
+We first understand your data, your workflow, and your industry — 
+then build a customised solution exactly for your business. 
+21 years of domain expertise across 15+ industries in Punjab and India."/>
+
+<meta name="keywords" content="
+customised software development India,
+custom accounting software Punjab,
+bespoke software development Amritsar,
+software company that understands business,
+custom ERP software India,
+tailored software solution Punjab,
+industry specific software India,
+custom web application Amritsar,
+software built for your business India,
+AI business insights custom software
+"/>
+
+<!-- OPEN GRAPH (WhatsApp / Facebook preview) -->
+<meta property="og:title" 
+  content="We Understand Your Business First. Then We Build."/>
+<meta property="og:description" 
+  content="Not standard software. Not off-the-shelf. 
+  Orbit Technologies studies your data and workflow first — 
+  then delivers a customised solution that fits your business exactly. 
+  21 years. 31 products. 500+ clients across Punjab."/>
+<meta property="og:url" content="https://theorbit.co.in"/>
+<meta property="og:type" content="website"/>
+<meta property="og:image" 
+  content="https://theorbit.co.in/images/orbit-preview.jpg"/>
+
+<!-- TWITTER / X -->
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" 
+  content="We Study Your Business First. Then We Build Your Software."/>
+<meta name="twitter:description" 
+  content="Customised software built after understanding your 
+  data and workflow. Not standard. Not generic. 
+  Built exactly for your industry and your business."/>
+
+<!-- TECHNICAL -->
+<meta name="robots" content="index, follow"/>
+<meta name="author" content="Orbit Technologies, Amritsar"/>
+<meta name="geo.region" content="IN-PB"/>
+<meta name="geo.placename" content="Amritsar, Punjab, India"/>
+<meta name="geo.position" content="31.6340;74.8723"/>
+<meta name="ICBM" content="31.6340, 74.8723"/>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Barlow:wght@700;800;900&family=Cormorant+Garamond:wght@400;600;700&display=swap" rel="stylesheet"/>
 <style>
-:root {
-  --orange: #F76C2F;
-  --orange-light: #FFF0E8;
-  --orange-dark: #C9480D;
-  --navy: #1A2340;
-  --navy-mid: #253059;
-  --sky: #EEF4FF;
-  --sky2: #D6E4FF;
-  --text: #1A2340;
-  --muted: #6B7A99;
-  --white: #FFFFFF;
-  --radius: 16px;
-  --font-head: 'Sora', sans-serif;
-  --font-body: 'Nunito', sans-serif;
+:root{
+  --black:#f5f7fa;
+  --deep:#eef3f8;
+  --navy:#dfe5ec;
+  --panel:#ffffff;
+  --glass:rgba(0,0,0,0.02);
+  --border:rgba(0,0,0,0.08);
+  --border2:rgba(0,0,0,0.12);
+  --white:#111827;
+  --off:#374151;
+  --muted:#6b7280;
+  --faint:#9ca3af;
+  --gold:#C9952A;
+  --gold2:#E8B84B;
+  --blue:#2563EB;
+  --blue2:#1D4ED8;
+  --blue3:#1533A0;
+  --serif:'Cormorant Garamond',serif;
+  --sans:'Outfit',sans-serif;
+  --bold:'Barlow',sans-serif;
+  --max:1200px;
 }
 *{margin:0;padding:0;box-sizing:border-box;}
 html{scroll-behavior:smooth;}
-body{font-family:var(--font-body);color:var(--text);background:var(--white);overflow-x:hidden;}
+body{font-family:var(--sans);background:var(--black);color:var(--white);overflow-x:hidden;-webkit-font-smoothing:antialiased;}
+a{text-decoration:none;color:inherit;}
+
+/* BG */
+.bg-hero{position:relative;background:var(--deep);overflow:hidden;}
+.bg-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 80% 60% at 60% -10%,rgba(37,99,235,0.18) 0%,transparent 65%),radial-gradient(ellipse 50% 40% at 90% 80%,rgba(201,149,42,0.07) 0%,transparent 55%),radial-gradient(ellipse 60% 50% at -10% 60%,rgba(37,99,235,0.09) 0%,transparent 60%);pointer-events:none;}
+.bg-hero::after{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,0.022) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.022) 1px,transparent 1px);background-size:64px 64px;mask-image:radial-gradient(ellipse 80% 80% at 50% 50%,black 20%,transparent 100%);pointer-events:none;}
+.bg-alt{background:var(--deep);}
+.bg-dark{background:var(--black);}
+.bg-section{position:relative;background:var(--black);overflow:hidden;}
+.bg-section::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 50% at 50% 0%,rgba(37,99,235,0.05) 0%,transparent 70%);pointer-events:none;}
 
 /* NAV */
-nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(255,255,255,0.92);backdrop-filter:blur(12px);border-bottom:1px solid #E8EDF5;padding:0 5%;}
-.nav-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:64px;}
-.logo{font-family:var(--font-head);font-weight:700;font-size:1.3rem;color:var(--navy);text-decoration:none;display:flex;align-items:center;gap:10px;}
-.logo-icon{width:36px;height:36px;background:var(--orange);border-radius:10px;display:flex;align-items:center;justify-content:center;}
-.logo-icon svg{width:20px;height:20px;fill:white;}
+nav{position:fixed;inset:0 0 auto;z-index:500;border-bottom:1px solid var(--border);background:rgba(255,255,255,0.95);backdrop-filter:blur(20px);}
+.nav-w{max-width:var(--max);margin:0 auto;padding:0 48px;height:72px;display:flex;align-items:center;justify-content:space-between;}
+.nav-logo{display:flex;align-items:center;gap:0;}
 .nav-links{display:flex;align-items:center;gap:32px;list-style:none;}
-.nav-links a{text-decoration:none;color:var(--muted);font-weight:600;font-size:.93rem;transition:color .2s;}
-.nav-links a:hover{color:var(--orange);}
-.nav-cta{background:var(--orange);color:white;padding:10px 22px;border-radius:50px;font-weight:700;font-size:.9rem;text-decoration:none;transition:background .2s,transform .15s;}
-.nav-cta:hover{background:var(--orange-dark);transform:translateY(-1px);}
+.nav-links a{font-size:.8rem;font-weight:500;color:var(--muted);letter-spacing:.04em;transition:color .2s;}
+.nav-links a:hover{color:var(--white);}
+.nav-cta{border:1px solid var(--border2);color:var(--white);padding:9px 22px;font-size:.78rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;border-radius:3px;transition:all .2s;}
+.nav-cta:hover{background:var(--white);color:var(--black);}
+
+/* LOGO SVG inline */
+ORBIT TECHNOLOGIES
 
 /* HERO */
-.hero{padding:120px 5% 80px;max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;}
-.hero-badge{display:inline-flex;align-items:center;gap:8px;background:var(--orange-light);color:var(--orange-dark);font-weight:700;font-size:.82rem;padding:6px 14px;border-radius:50px;margin-bottom:20px;letter-spacing:.3px;}
-.hero-badge span{width:7px;height:7px;background:var(--orange);border-radius:50%;display:inline-block;}
-.hero h1{font-family:var(--font-head);font-size:3rem;font-weight:700;line-height:1.18;color:var(--navy);margin-bottom:20px;}
-.hero h1 em{font-style:normal;color:var(--orange);}
-.hero p{font-size:1.1rem;color:var(--muted);line-height:1.75;margin-bottom:32px;max-width:480px;}
-.hero-actions{display:flex;gap:14px;flex-wrap:wrap;}
-.btn-primary{background:var(--orange);color:white;padding:14px 30px;border-radius:50px;font-weight:800;font-size:1rem;text-decoration:none;transition:all .2s;display:inline-flex;align-items:center;gap:8px;}
-.btn-primary:hover{background:var(--orange-dark);transform:translateY(-2px);box-shadow:0 8px 24px rgba(247,108,47,.35);}
-.btn-secondary{background:var(--sky);color:var(--navy);padding:14px 28px;border-radius:50px;font-weight:700;font-size:1rem;text-decoration:none;transition:all .2s;}
-.btn-secondary:hover{background:var(--sky2);transform:translateY(-1px);}
-.hero-stats{display:flex;gap:32px;margin-top:40px;}
-.stat{text-align:left;}
-.stat-num{font-family:var(--font-head);font-size:2rem;font-weight:700;color:var(--navy);}
-.stat-label{font-size:.82rem;color:var(--muted);font-weight:600;margin-top:2px;}
-.hero-visual{position:relative;}
-.hero-card{background:white;border-radius:var(--radius);box-shadow:0 8px 40px rgba(26,35,64,.12);padding:28px;border:1px solid #E8EDF5;}
-.hero-card-head{display:flex;align-items:center;gap:12px;margin-bottom:20px;}
-.hc-icon{width:44px;height:44px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:1.3rem;}
-.hc-title{font-family:var(--font-head);font-weight:700;font-size:1rem;color:var(--navy);}
-.hc-sub{font-size:.8rem;color:var(--muted);}
-.hc-bar-wrap{margin-bottom:14px;}
-.hc-bar-label{display:flex;justify-content:space-between;font-size:.8rem;color:var(--muted);font-weight:600;margin-bottom:6px;}
-.hc-bar{height:8px;background:#EEF4FF;border-radius:50px;overflow:hidden;}
-.hc-bar-fill{height:100%;border-radius:50px;background:var(--orange);}
-.float-chip{position:absolute;background:white;border-radius:12px;box-shadow:0 4px 20px rgba(26,35,64,.12);padding:10px 16px;font-weight:700;font-size:.82rem;color:var(--navy);border:1px solid #E8EDF5;display:flex;align-items:center;gap:8px;}
-.fc1{top:-20px;right:-10px;animation:float1 3s ease-in-out infinite;}
-.fc2{bottom:20px;left:-24px;animation:float2 4s ease-in-out infinite;}
-@keyframes float1{0%,100%{transform:translateY(0);}50%{transform:translateY(-8px);}}
-@keyframes float2{0%,100%{transform:translateY(0);}50%{transform:translateY(6px);}}
+.hero-wrap{padding-top:72px;}
+.hero{max-width:var(--max);margin:0 auto;padding:110px 48px 90px;display:grid;grid-template-columns:1fr 440px;gap:80px;align-items:center;position:relative;z-index:1;}
+.hero-eyebrow{display:flex;align-items:center;gap:10px;font-size:.7rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--gold2);margin-bottom:24px;}
+.hero-eyebrow::before{content:'';width:28px;height:1px;background:var(--gold);}
+.hero h1{font-family:var(--serif);font-size:4rem;font-weight:600;line-height:1.1;color:var(--white);margin-bottom:24px;}
+.hero h1 span{background:linear-gradient(90deg,var(--gold),var(--gold2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
+.hero-sub{font-size:.97rem;color:var(--muted);line-height:1.85;max-width:480px;margin-bottom:40px;font-weight:300;}
+.hero-ctas{display:flex;align-items:center;gap:16px;margin-bottom:56px;}
+.cta-main{background:var(--blue);color:var(--white);padding:13px 30px;border-radius:3px;font-size:.82rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;transition:background .2s;}
+.cta-main:hover{background:var(--blue2);}
+.cta-out{border:1px solid var(--border2);color:var(--off);padding:12px 26px;border-radius:3px;font-size:.82rem;font-weight:500;letter-spacing:.04em;transition:all .2s;}
+.cta-out:hover{border-color:var(--white);color:var(--white);}
+.hero-stats{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--border);padding-top:32px;}
+.hs{padding:0 24px;border-left:1px solid var(--border);}
+.hs:first-child{border-left:none;padding-left:0;}
+.hs-n{font-family:var(--serif);font-size:2.6rem;font-weight:600;color:var(--white);line-height:1;}
+.hs-l{font-size:.72rem;color:var(--muted);margin-top:5px;letter-spacing:.04em;}
 
-/* CLIENTS */
-.clients{background:var(--sky);padding:40px 5%;}
-.clients-inner{max-width:1200px;margin:0 auto;text-align:center;}
-.clients p{font-size:.9rem;color:var(--muted);font-weight:600;letter-spacing:.5px;text-transform:uppercase;margin-bottom:24px;}
-.clients-logos{display:flex;flex-wrap:wrap;justify-content:center;gap:16px;}
-.client-pill{background:white;border-radius:50px;padding:10px 22px;font-weight:700;font-size:.88rem;color:var(--navy);border:1px solid #D6E4FF;}
+/* HERO CARD */
+.hero-card{background:var(--panel);border:1px solid var(--border2);border-radius:12px;overflow:hidden;position:relative;}
+.hero-card::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(37,99,235,0.06) 0%,transparent 60%);pointer-events:none;}
+.hc-bar{height:3px;background:linear-gradient(90deg,var(--blue),var(--gold));}
+.hc-head{padding:18px 22px;border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;}
+.hc-title{font-size:.7rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);}
+.hc-live{display:flex;align-items:center;gap:6px;font-size:.68rem;color:#4ADE80;font-weight:500;}
+.hc-live::before{content:'';width:6px;height:6px;border-radius:50%;background:#4ADE80;animation:pulse 2s infinite;}
+@keyframes pulse{0%,100%{opacity:1;}50%{opacity:.4;}}
+.hc-body{padding:22px;}
+.hc-row{display:flex;align-items:center;gap:12px;margin-bottom:16px;}
+.hc-label{font-size:.74rem;color:var(--muted);width:112px;flex-shrink:0;}
+.hc-track{flex:1;height:4px;background:rgba(255,255,255,0.06);border-radius:2px;overflow:hidden;}
+.hc-fill{height:100%;border-radius:2px;}
+.hc-val{font-size:.76rem;font-weight:600;color:var(--white);width:48px;text-align:right;}
+.hc-insight{margin:8px 0 0;padding:14px 16px;background:rgba(37,99,235,0.08);border:1px solid rgba(37,99,235,0.2);border-radius:6px;}
+.hci-tag{font-size:.65rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--blue);margin-bottom:5px;}
+.hci-text{font-size:.79rem;color:var(--off);line-height:1.6;}
+.hc-foot{padding:14px 22px;border-top:1px solid var(--border);display:flex;justify-content:space-between;}
+.hcf-l{font-size:.68rem;color:var(--faint);}
+.hcf-r{font-size:.68rem;font-weight:600;color:var(--gold2);}
 
-/* SECTION COMMON */
-section{padding:80px 5%;}
-.section-inner{max-width:1200px;margin:0 auto;}
-.section-tag{display:inline-block;background:var(--orange-light);color:var(--orange-dark);font-weight:700;font-size:.78rem;padding:5px 12px;border-radius:50px;letter-spacing:.4px;text-transform:uppercase;margin-bottom:14px;}
-.section-title{font-family:var(--font-head);font-size:2.2rem;font-weight:700;color:var(--navy);margin-bottom:14px;line-height:1.25;}
-.section-sub{font-size:1.05rem;color:var(--muted);line-height:1.7;max-width:560px;}
+/* TICKER */
+.ticker{border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:13px 0;overflow:hidden;background:rgba(255,255,255,0.012);}
+.ticker-inner{display:flex;gap:48px;animation:ticker 35s linear infinite;white-space:nowrap;}
+.ti{font-size:.68rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--faint);}
+.ti-dot{color:var(--border2);}
+@keyframes ticker{from{transform:translateX(0);}to{transform:translateX(-50%);}}
+<img src="images/logo.png" alt="Orbit Technologies">
+/* SECTION */
+.section{padding:96px 48px;max-width:var(--max);margin:0 auto;}
+.s-eye{display:flex;align-items:center;gap:12px;font-size:.68rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--gold2);margin-bottom:18px;}
+.s-eye::after{content:'';flex:0 0 24px;height:1px;background:var(--gold);}
+.s-head{font-family:var(--serif);font-size:2.7rem;font-weight:600;color:var(--white);line-height:1.15;margin-bottom:16px;}
+.s-sub{font-size:.93rem;color:var(--muted);line-height:1.85;max-width:540px;font-weight:300;}
+.gold-rule{width:36px;height:1px;background:var(--gold);margin:32px 0;}
 
-/* INDUSTRIES */
-.industries-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:16px;margin-top:48px;}
-.ind-card{background:var(--sky);border-radius:var(--radius);padding:28px 22px;cursor:pointer;transition:all .25s;border:2px solid transparent;text-align:center;}
-.ind-card:hover{border-color:var(--orange);background:var(--orange-light);transform:translateY(-4px);}
-.ind-icon{font-size:2.2rem;margin-bottom:14px;}
-.ind-name{font-family:var(--font-head);font-weight:700;font-size:.97rem;color:var(--navy);margin-bottom:6px;}
-.ind-count{font-size:.8rem;color:var(--muted);font-weight:600;}
+/* INDUSTRIES GRID */
+.ind-grid{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--border);margin-top:56px;}
+.ind-cell{padding:32px 26px;border-right:1px solid var(--border);border-bottom:1px solid var(--border);position:relative;overflow:hidden;transition:background .2s;cursor:default;}
+.ind-cell:hover{background:#f8fafc;}
+.ind-cell:nth-child(4n){border-right:none;}
+.ind-cell:nth-last-child(-n+4){border-bottom:none;}
+.ind-cell::after{content:'';position:absolute;bottom:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--blue),var(--gold));transform:scaleX(0);transform-origin:left;transition:transform .28s;}
+.ind-cell:hover::after{transform:scaleX(1);}
+.ind-n{font-family:var(--serif);font-size:1rem;color:var(--faint);margin-bottom:14px;}
+.ind-name{font-size:.9rem;font-weight:600;color:var(--white);margin-bottom:8px;}
+.ind-desc{font-size:.76rem;color:var(--muted);line-height:1.65;}
 
 /* PRODUCTS */
-.products-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:24px;margin-top:48px;}
-.prod-card{background:white;border-radius:var(--radius);border:1px solid #E8EDF5;padding:28px;transition:all .25s;position:relative;overflow:hidden;}
-.prod-card::before{content:'';position:absolute;top:0;left:0;right:0;height:4px;background:var(--orange);transform:scaleX(0);transition:transform .25s;transform-origin:left;}
-.prod-card:hover{box-shadow:0 8px 32px rgba(26,35,64,.1);transform:translateY(-3px);}
+.prod-search{display:flex;gap:12px;margin-top:40px;margin-bottom:8px;flex-wrap:wrap;}
+.prod-filter{background:rgba(255,255,255,0.04);border:1px solid var(--border);color:var(--muted);padding:8px 18px;border-radius:3px;font-size:.76rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;cursor:pointer;transition:all .2s;font-family:var(--sans);}
+.prod-filter:hover,.prod-filter.active{background:var(--blue);border-color:var(--blue);color:var(--white);}
+.prod-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);border:1px solid var(--border);margin-top:16px;border-radius:8px;overflow:hidden;}
+.prod-card{background:var(--panel);padding:28px 26px;transition:background .2s;position:relative;overflow:hidden;}
+.prod-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--blue),var(--gold));transform:scaleX(0);transform-origin:left;transition:transform .28s;}
+.prod-card:hover{background:var(--deep);}
 .prod-card:hover::before{transform:scaleX(1);}
-.prod-tag{display:inline-block;background:var(--orange-light);color:var(--orange-dark);font-size:.75rem;font-weight:700;padding:4px 10px;border-radius:50px;margin-bottom:14px;}
-.prod-title{font-family:var(--font-head);font-weight:700;font-size:1.05rem;color:var(--navy);margin-bottom:10px;}
-.prod-desc{font-size:.9rem;color:var(--muted);line-height:1.65;margin-bottom:16px;}
-.prod-features{list-style:none;display:flex;flex-direction:column;gap:6px;}
-.prod-features li{font-size:.83rem;color:var(--muted);display:flex;align-items:center;gap:8px;}
-.prod-features li::before{content:'✓';color:var(--orange);font-weight:800;font-size:.9rem;flex-shrink:0;}
-
-/* WHY */
-.why{background:var(--navy);color:white;}
-.why .section-title{color:white;}
-.why .section-sub{color:#A0AECB;}
-.why-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:24px;margin-top:48px;}
-.why-card{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:var(--radius);padding:28px;transition:all .25s;}
-.why-card:hover{background:rgba(255,255,255,.1);transform:translateY(-3px);}
-.why-num{font-family:var(--font-head);font-size:2.5rem;font-weight:700;color:var(--orange);margin-bottom:10px;}
-.why-title{font-weight:700;font-size:1rem;margin-bottom:8px;color:white;}
-.why-desc{font-size:.88rem;color:#A0AECB;line-height:1.65;}
+.pc-num{font-family:var(--serif);font-size:.95rem;color:var(--faint);margin-bottom:12px;}
+.pc-cat{font-size:.65rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--gold2);margin-bottom:8px;}
+.pc-name{font-size:.9rem;font-weight:600;color:var(--white);line-height:1.4;margin-bottom:10px;}
+.pc-tag{display:inline-block;font-size:.62rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--faint);border:1px solid var(--border);padding:2px 8px;border-radius:2px;margin-right:4px;margin-top:4px;}
+.pc-web{display:inline-block;font-size:.62rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--blue);border:1px solid rgba(37,99,235,0.3);padding:2px 8px;border-radius:2px;margin-right:4px;margin-top:4px;}
 
 /* ORBIT BI */
-.bi-section{background:linear-gradient(135deg,var(--orange-light) 0%,#FFF 60%);}
-.bi-inner{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;}
-.bi-badge{display:inline-flex;align-items:center;gap:8px;background:var(--orange);color:white;font-weight:700;font-size:.8rem;padding:5px 14px;border-radius:50px;margin-bottom:16px;}
-.bi-title{font-family:var(--font-head);font-size:2.2rem;font-weight:700;color:var(--navy);margin-bottom:16px;line-height:1.25;}
-.bi-desc{font-size:1rem;color:var(--muted);line-height:1.75;margin-bottom:28px;}
-.bi-list{list-style:none;display:flex;flex-direction:column;gap:12px;margin-bottom:32px;}
-.bi-list li{display:flex;align-items:flex-start;gap:12px;font-size:.95rem;color:var(--text);}
-.bi-list li .check{width:22px;height:22px;background:var(--orange);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;}
-.bi-list li .check svg{width:12px;height:12px;fill:white;}
-.bi-visual{background:white;border-radius:var(--radius);box-shadow:0 12px 48px rgba(26,35,64,.12);padding:24px;border:1px solid #E8EDF5;}
-.bi-chart-row{display:flex;align-items:center;gap:12px;margin-bottom:16px;}
-.bi-chart-label{font-size:.8rem;font-weight:700;color:var(--muted);width:80px;text-align:right;flex-shrink:0;}
-.bi-chart-bar-outer{flex:1;height:28px;background:var(--sky);border-radius:8px;overflow:hidden;position:relative;}
-.bi-chart-bar-inner{height:100%;border-radius:8px;display:flex;align-items:center;padding-left:10px;font-size:.78rem;font-weight:700;color:white;}
-.bi-ai-note{background:var(--orange-light);border-radius:12px;padding:14px 16px;font-size:.85rem;color:var(--orange-dark);font-weight:600;display:flex;align-items:flex-start;gap:10px;margin-top:8px;}
+.bi-wrap{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;}
+.bi-badge{display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(201,149,42,0.2);background:rgba(201,149,42,0.07);color:var(--gold2);font-size:.68rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:5px 14px;border-radius:2px;margin-bottom:22px;}
+.bi-feats{margin-top:32px;border-top:1px solid var(--border);}
+.bi-feat{display:flex;gap:18px;padding:20px 0;border-bottom:1px solid var(--border);align-items:flex-start;}
+.bf-n{font-family:var(--serif);font-size:1.4rem;color:var(--border2);flex-shrink:0;line-height:1;min-width:26px;}
+.bf-t{font-size:.87rem;font-weight:600;color:var(--white);margin-bottom:4px;}
+.bf-d{font-size:.77rem;color:var(--muted);line-height:1.65;}
+.bi-chart{background:var(--panel);border:1px solid var(--border2);border-radius:10px;overflow:hidden;}
+.bc-top{height:2px;background:linear-gradient(90deg,var(--blue),var(--gold));}
+.bc-head{padding:18px 22px;border-bottom:1px solid var(--border);display:flex;justify-content:space-between;align-items:center;}
+.bc-title{font-size:.7rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);}
+.bc-period{font-size:.68rem;color:var(--faint);}
+.bc-body{padding:22px;}
+.bc-row{margin-bottom:18px;}
+.bc-rh{display:flex;justify-content:space-between;margin-bottom:7px;}
+.bc-p{font-size:.8rem;font-weight:500;color:var(--off);}
+.bc-a{font-size:.8rem;font-weight:600;color:var(--white);}
+.bc-track{height:3px;background:rgba(255,255,255,0.05);border-radius:2px;overflow:hidden;}
+.bc-fill{height:100%;border-radius:2px;background:var(--blue);}
+.bc-ai{margin-top:6px;padding:14px 16px;background:rgba(201,149,42,0.06);border:1px solid rgba(201,149,42,0.15);border-radius:6px;}
+.bc-ai-t{font-size:.63rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--gold2);margin-bottom:5px;}
+.bc-ai-d{font-size:.78rem;color:var(--off);line-height:1.6;}
+.bc-foot{padding:13px 22px;border-top:1px solid var(--border);display:flex;justify-content:space-between;}
+.bcf-l{font-size:.67rem;color:var(--faint);}
+.bcf-r{font-size:.67rem;color:var(--blue);font-weight:600;}
+
+/* WHY */
+.why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--border);border:1px solid var(--border);margin-top:56px;border-radius:8px;overflow:hidden;}
+.why-cell{background:var(--panel);padding:34px 26px;transition:background .22s;}
+.why-cell:hover{background:var(--deep);}
+.why-n{font-family:var(--serif);font-size:2.8rem;font-weight:600;background:linear-gradient(135deg,var(--gold),var(--gold2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:12px;line-height:1;}
+.why-t{font-size:.87rem;font-weight:600;color:var(--white);margin-bottom:7px;}
+.why-d{font-size:.76rem;color:var(--muted);line-height:1.65;}
 
 /* TESTIMONIALS */
-.test-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:24px;margin-top:48px;}
-.test-card{background:white;border-radius:var(--radius);border:1px solid #E8EDF5;padding:28px;transition:box-shadow .25s;}
-.test-card:hover{box-shadow:0 8px 32px rgba(26,35,64,.1);}
-.test-quote{font-size:1rem;color:var(--text);line-height:1.7;margin-bottom:20px;font-style:italic;}
-.test-author{display:flex;align-items:center;gap:12px;}
-.test-avatar{width:42px;height:42px;border-radius:50%;background:var(--orange);display:flex;align-items:center;justify-content:center;font-weight:700;color:white;font-size:1rem;}
-.test-name{font-weight:700;font-size:.9rem;color:var(--navy);}
-.test-biz{font-size:.8rem;color:var(--muted);}
-.stars{color:var(--orange);font-size:.9rem;margin-bottom:16px;}
+.test-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);border:1px solid var(--border);margin-top:56px;border-radius:8px;overflow:hidden;}
+.test-cell{background:var(--panel);padding:36px 30px;transition:background .2s;}
+.test-cell:hover{background:var(--deep);}
+.tc-q{font-family:var(--serif);font-size:2.8rem;color:var(--gold);line-height:.8;margin-bottom:18px;opacity:.45;}
+.tc-text{font-size:.87rem;color:var(--muted);line-height:1.8;margin-bottom:24px;font-weight:300;}
+.tc-rule{width:20px;height:1px;background:var(--gold);margin-bottom:16px;opacity:.5;}
+.tc-name{font-size:.84rem;font-weight:600;color:var(--white);}
+.tc-co{font-size:.73rem;color:var(--faint);margin-top:3px;}
 
-/* CTA */
-.cta-section{background:var(--orange);padding:80px 5%;}
-.cta-inner{max-width:700px;margin:0 auto;text-align:center;}
-.cta-inner h2{font-family:var(--font-head);font-size:2.4rem;font-weight:700;color:white;margin-bottom:16px;}
-.cta-inner p{font-size:1.05rem;color:rgba(255,255,255,.85);margin-bottom:36px;line-height:1.7;}
-.cta-form{display:flex;gap:12px;max-width:480px;margin:0 auto;flex-wrap:wrap;}
-.cta-input{flex:1;min-width:220px;padding:14px 20px;border-radius:50px;border:none;font-size:.95rem;font-family:var(--font-body);outline:none;}
-.cta-btn{background:var(--navy);color:white;padding:14px 28px;border-radius:50px;border:none;font-weight:800;font-size:.95rem;cursor:pointer;transition:background .2s;font-family:var(--font-body);}
-.cta-btn:hover{background:#0F1628;}
-.cta-note{font-size:.82rem;color:rgba(255,255,255,.7);margin-top:16px;}
+/* CONTACT */
+.contact-wrap{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start;}
+.ci-list{margin-top:32px;border-top:1px solid var(--border);}
+.ci-row{display:flex;gap:16px;padding:18px 0;border-bottom:1px solid var(--border);align-items:center;}
+.ci-icon{width:34px;height:34px;border-radius:6px;border:1px solid var(--border2);display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.ci-icon svg{width:15px;height:15px;stroke:var(--gold2);fill:none;stroke-width:1.5;}
+.ci-lbl{font-size:.66rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--faint);margin-bottom:2px;}
+.ci-val{font-size:.84rem;color:var(--white);font-weight:500;}
+.cf-wrap{background:var(--panel);border:1px solid var(--border2);border-radius:10px;overflow:hidden;}
+.cf-bar{height:2px;background:linear-gradient(90deg,var(--blue),var(--gold));}
+.cf-head{padding:22px 26px;border-bottom:1px solid var(--border);}
+.cf-title{font-size:.7rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);}
+.cf-body{padding:26px;display:flex;flex-direction:column;gap:12px;}
+.cf-row{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
+.cf-in{padding:11px 15px;background:rgba(255,255,255,0.04);border:1px solid var(--border);border-radius:3px;color:var(--white);font-size:.82rem;font-family:var(--sans);outline:none;transition:border .18s;width:100%;}
+.cf-in::placeholder{color:var(--faint);}
+.cf-in:focus{border-color:var(--blue);}
+.cf-sel{padding:11px 15px;background:rgba(255,255,255,0.04);border:1px solid var(--border);border-radius:3px;color:var(--muted);font-size:.82rem;font-family:var(--sans);outline:none;width:100%;appearance:none;cursor:pointer;}
+.cf-sel option{background:var(--deep);color:var(--white);}
+.cf-btn{background:var(--blue);color:var(--white);padding:12px 24px;border:none;border-radius:3px;font-size:.8rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;font-family:var(--sans);cursor:pointer;transition:background .18s;width:100%;}
+.cf-btn:hover{background:var(--blue2);}
+.cf-note{font-size:.68rem;color:var(--faint);text-align:center;padding:0 26px 18px;}
 
 /* FOOTER */
-footer{background:var(--navy);padding:60px 5% 32px;color:white;}
-.footer-inner{max-width:1200px;margin:0 auto;}
-.footer-top{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:40px;margin-bottom:48px;}
-.footer-brand .logo{color:white;margin-bottom:14px;display:flex;}
-.footer-brand p{font-size:.88rem;color:#A0AECB;line-height:1.7;max-width:280px;}
-.footer-contact{margin-top:20px;display:flex;flex-direction:column;gap:8px;}
-.footer-contact a{font-size:.85rem;color:#A0AECB;text-decoration:none;transition:color .2s;}
-.footer-contact a:hover{color:var(--orange);}
-.footer-col h4{font-weight:700;font-size:.9rem;color:white;margin-bottom:16px;letter-spacing:.3px;}
-.footer-col ul{list-style:none;display:flex;flex-direction:column;gap:10px;}
-.footer-col ul li a{font-size:.85rem;color:#A0AECB;text-decoration:none;transition:color .2s;}
-.footer-col ul li a:hover{color:var(--orange);}
-.footer-bottom{border-top:1px solid rgba(255,255,255,.08);padding-top:24px;display:flex;justify-content:space-between;align-items:center;flex-wrap:gap;}
-.footer-bottom p{font-size:.82rem;color:#A0AECB;}
-.wa-btn{position:fixed;bottom:24px;right:24px;background:#25D366;color:white;width:54px;height:54px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(37,211,102,.4);text-decoration:none;transition:transform .2s;z-index:99;}
-.wa-btn:hover{transform:scale(1.1);}
-.wa-btn svg{width:28px;height:28px;fill:white;}
+footer{border-top:1px solid var(--border);background:var(--black);padding:68px 48px 32px;}
+.footer-w{max-width:var(--max);margin:0 auto;}
+.footer-grid{display:grid;grid-template-columns:2.4fr 1fr 1fr 1fr;gap:44px;margin-bottom:52px;}
+.fg-desc{font-size:.79rem;color:var(--faint);line-height:1.85;margin-top:14px;max-width:270px;font-weight:300;}
+.fg-col h4{font-size:.63rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--faint);margin-bottom:20px;}
+.fg-col ul{list-style:none;display:flex;flex-direction:column;gap:11px;}
+.fg-col ul li a{font-size:.79rem;color:var(--faint);transition:color .18s;font-weight:300;}
+.fg-col ul li a:hover{color:var(--white);}
+.footer-bot{border-top:1px solid var(--border);padding-top:26px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;}
+.fb-copy{font-size:.71rem;color:var(--faint);}
+.fb-marks{display:flex;gap:18px;}
+.fb-mark{font-size:.63rem;color:var(--faint);letter-spacing:.06em;text-transform:uppercase;}
 
-/* ANIMATE */
-.fade-in{opacity:0;transform:translateY(24px);transition:opacity .6s,transform .6s;}
-.fade-in.visible{opacity:1;transform:translateY(0);}
+/* WA */
+.wa{position:fixed;bottom:28px;right:28px;z-index:400;width:48px;height:48px;border-radius:50%;background:#128C7E;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 24px rgba(0,0,0,.4);transition:transform .2s;}
+.wa:hover{transform:scale(1.08);}
+.wa svg{width:24px;height:24px;fill:white;}
 
-@media(max-width:900px){
-  .hero{grid-template-columns:1fr;gap:40px;}
-  .hero-visual{display:none;}
-  .bi-inner{grid-template-columns:1fr;}
-  .footer-top{grid-template-columns:1fr 1fr;}
+/* REVEAL */
+.r{opacity:0;transform:translateY(20px);transition:opacity .55s,transform .55s;}
+.r.v{opacity:1;transform:translateY(0);}
+.r2{opacity:0;transform:translateY(20px);transition:opacity .55s .12s,transform .55s .12s;}
+.r2.v{opacity:1;transform:translateY(0);}
+
+@media(max-width:1024px){
+  .hero{grid-template-columns:1fr;}
+  .hero-card{display:none;}
+  .bi-wrap,.contact-wrap{grid-template-columns:1fr;gap:44px;}
+  .ind-grid{grid-template-columns:repeat(2,1fr);}
+  .ind-cell:nth-child(4n){border-right:1px solid var(--border);}
+  .ind-cell:nth-child(2n){border-right:none;}
+  .why-grid{grid-template-columns:repeat(2,1fr);}
+  .test-grid{grid-template-columns:1fr;}
+  .prod-grid{grid-template-columns:repeat(2,1fr);}
   nav .nav-links{display:none;}
+  .footer-grid{grid-template-columns:1fr 1fr;}
 }
-@media(max-width:600px){
-  .hero h1{font-size:2.1rem;}
-  .section-title{font-size:1.7rem;}
-  .footer-top{grid-template-columns:1fr;}
+@media(max-width:640px){
+  .hero{padding:96px 24px 56px;}
+  .hero h1{font-size:2.7rem;}
+  .section{padding:64px 24px;}
+  .s-head{font-size:2rem;}
+  nav .nav-w{padding:0 24px;}
+  .prod-grid{grid-template-columns:1fr;}
+  .ind-grid{grid-template-columns:1fr 1fr;}
+  .footer-grid{grid-template-columns:1fr;}
+  footer{padding:48px 24px 28px;}
+  .cf-row{grid-template-columns:1fr;}
 }
 </style>
+
+<style>
+.menu-toggle{
+  display:none;
+  background:none;
+  border:none;
+  color:#fff;
+  font-size:28px;
+  cursor:pointer;
+}
+
+@media(max-width:1024px){
+  .menu-toggle{
+    display:block;
+  }
+
+  .nav-links{
+    position:absolute;
+    top:72px;
+    left:0;
+    right:0;
+    background:#ffffff;
+    flex-direction:column;
+    align-items:flex-start;
+    padding:24px;
+    gap:18px;
+    display:none !important;
+    border-bottom:1px solid rgba(255,255,255,0.08);
+  }
+
+  .nav-links.show{
+    display:flex !important;
+  }
+}
+</style>
+
+<script>
+function toggleMenu(){
+  document.querySelector('.nav-links').classList.toggle('show');
+}
+</script>
+
+
+<style>
+/* =========================================
+   ORBIT - PREMIUM ANIMATED BACKGROUND
+   ========================================= */
+
+:root{
+    --max:1150px;
+}
+
+/* CONTENT WIDTH FIX */
+.section{
+    width:calc(100% - 48px);
+    max-width:var(--max);
+    margin:0 auto;
+    padding:96px 0;
+    position:relative;
+    z-index:1;
+}
+
+.hero{
+    width:calc(100% - 48px);
+    max-width:var(--max);
+    margin:0 auto;
+    padding:110px 0 90px;
+    display:grid;
+    grid-template-columns:minmax(0,1fr) 440px;
+    gap:70px;
+    align-items:center;
+    position:relative;
+    z-index:2;
+}
+
+.nav-w{
+    width:calc(100% - 48px);
+    max-width:var(--max);
+    margin:0 auto;
+    padding:0;
+    height:72px;
+}
+
+.footer-w{
+    width:calc(100% - 48px);
+    max-width:var(--max);
+    margin:0 auto;
+}
+
+/* ANIMATED BACKGROUND */
+.animated-bg{
+    position:absolute;
+    inset:0;
+    overflow:hidden;
+    pointer-events:none;
+    z-index:0;
+}
+
+.bg-orb{
+    position:absolute;
+    border-radius:50%;
+    filter:blur(70px);
+    opacity:.16;
+    animation:orbitOrbFloat 14s ease-in-out infinite alternate;
+}
+
+.bg-orb.blue{
+    width:420px;
+    height:420px;
+    background:#2563EB;
+    top:-120px;
+    left:5%;
+}
+
+.bg-orb.gold{
+    width:320px;
+    height:320px;
+    background:#C9952A;
+    right:5%;
+    bottom:-100px;
+    animation-delay:-5s;
+}
+
+.bg-orb.cyan{
+    width:260px;
+    height:260px;
+    background:#06B6D4;
+    left:45%;
+    top:35%;
+    opacity:.08;
+    animation-delay:-8s;
+}
+
+@keyframes orbitOrbFloat{
+    0%{
+        transform:translate3d(-20px,-10px,0) scale(1);
+    }
+    50%{
+        transform:translate3d(40px,30px,0) scale(1.12);
+    }
+    100%{
+        transform:translate3d(-10px,60px,0) scale(.95);
+    }
+}
+
+.tech-grid{
+    position:absolute;
+    inset:-100px;
+    background-image:
+        linear-gradient(rgba(37,99,235,.055) 1px,transparent 1px),
+        linear-gradient(90deg,rgba(37,99,235,.055) 1px,transparent 1px);
+    background-size:60px 60px;
+    transform:perspective(600px) rotateX(60deg) scale(1.5);
+    transform-origin:center;
+    opacity:.35;
+    animation:orbitGridMove 18s linear infinite;
+}
+
+@keyframes orbitGridMove{
+    from{
+        background-position:0 0;
+    }
+    to{
+        background-position:0 60px;
+    }
+}
+
+.bg-particle{
+    position:absolute;
+    border-radius:50%;
+    background:#2563EB;
+    opacity:.35;
+    box-shadow:0 0 10px rgba(37,99,235,.8);
+    animation:orbitParticleFloat linear infinite;
+}
+
+@keyframes orbitParticleFloat{
+    0%{
+        transform:translate3d(0,20px,0);
+        opacity:0;
+    }
+    15%{
+        opacity:.45;
+    }
+    85%{
+        opacity:.25;
+    }
+    100%{
+        transform:translate3d(0,-120px,0);
+        opacity:0;
+    }
+}
+
+/* Subtle animated data lines */
+.data-line{
+    position:absolute;
+    height:1px;
+    background:linear-gradient(
+        90deg,
+        transparent,
+        rgba(37,99,235,.35),
+        transparent
+    );
+    width:280px;
+    animation:dataLineMove 8s linear infinite;
+    opacity:.35;
+}
+
+.data-line.one{
+    top:25%;
+    left:-300px;
+}
+
+.data-line.two{
+    top:62%;
+    left:-400px;
+    animation-delay:-3s;
+}
+
+.data-line.three{
+    top:80%;
+    left:-250px;
+    animation-delay:-6s;
+}
+
+@keyframes dataLineMove{
+    0%{
+        transform:translateX(0);
+        opacity:0;
+    }
+    15%{
+        opacity:.35;
+    }
+    85%{
+        opacity:.35;
+    }
+    100%{
+        transform:translateX(160vw);
+        opacity:0;
+    }
+}
+
+/* Keep hero content above animation */
+.bg-hero > .hero{
+    position:relative;
+    z-index:2;
+}
+
+/* Contact */
+.contact-wrap{
+    display:grid;
+    grid-template-columns:minmax(0,1fr) minmax(0,1fr);
+    gap:64px;
+    align-items:start;
+    width:100%;
+}
+
+.cf-wrap{
+    width:100%;
+    background:var(--panel);
+    border:1px solid var(--border2);
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 20px 60px rgba(0,0,0,.10);
+}
+
+/* Reduced motion accessibility */
+@media(prefers-reduced-motion:reduce){
+    .bg-orb,
+    .tech-grid,
+    .bg-particle,
+    .data-line{
+        animation:none !important;
+    }
+}
+
+@media(max-width:1024px){
+    .section{
+        width:calc(100% - 40px);
+        padding:80px 0;
+    }
+
+    .hero{
+        width:calc(100% - 40px);
+        padding:90px 0 70px;
+        grid-template-columns:1fr;
+    }
+
+    .hero-card{
+        display:none;
+    }
+
+    .bi-wrap,
+    .contact-wrap{
+        grid-template-columns:1fr;
+        gap:44px;
+    }
+
+    .footer-w{
+        width:calc(100% - 40px);
+    }
+}
+
+@media(max-width:640px){
+    .section{
+        width:calc(100% - 32px);
+        padding:64px 0;
+    }
+
+    .hero{
+        width:calc(100% - 32px);
+        padding:96px 0 56px;
+    }
+
+    .hero h1{
+        font-size:2.7rem;
+    }
+
+    .nav-w{
+        width:calc(100% - 32px);
+    }
+
+    .footer-w{
+        width:calc(100% - 32px);
+    }
+
+    .contact-wrap{
+        grid-template-columns:1fr;
+        gap:36px;
+    }
+
+    .cf-body{
+        padding:20px;
+    }
+
+    .cf-head{
+        padding:20px;
+    }
+
+    .cf-note{
+        padding-left:20px;
+        padding-right:20px;
+    }
+
+    .bg-orb.blue{
+        width:260px;
+        height:260px;
+    }
+
+    .bg-orb.gold{
+        width:220px;
+        height:220px;
+    }
+
+    .bg-orb.cyan{
+        width:180px;
+        height:180px;
+    }
+
+    .tech-grid{
+        opacity:.18;
+    }
+}
+</style>
+
+
+<style>
+/* ===== UNIFIED LIGHT SECTION THEME ===== */
+#orbit-bi,
+#orbit-wa{
+    background:#eef3f8 !important;
+}
+
+#orbit-bi > .section,
+#orbit-wa > .section{
+    color:#111827;
+}
+
+/* Testimonials section */
+.test-grid{
+    background:rgba(0,0,0,.08);
+}
+
+.test-cell{
+    background:#ffffff;
+}
+
+.test-cell:hover{
+    background:#f7f9fc;
+}
+
+/* Keep animated background subtle on light sections */
+#orbit-bi .animated-bg,
+#orbit-wa .animated-bg{
+    opacity:.55;
+}
+
+/* Better contrast for feature text on light backgrounds */
+#orbit-bi .bf-t,
+#orbit-wa .bf-t{
+    color:#111827;
+}
+
+#orbit-bi .bf-d,
+#orbit-wa .bf-d{
+    color:#4b5563;
+}
+
+#orbit-bi .s-head,
+#orbit-wa .s-head{
+    color:#111827;
+}
+
+#orbit-bi .s-sub,
+#orbit-wa .s-sub{
+    color:#6b7280;
+}
+</style>
+
 </head>
 <body>
 
 <!-- NAV -->
 <nav>
-  <div class="nav-inner">
-    <a href="#" class="logo">
-      <div class="logo-icon">
-        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 2a10 10 0 100 20A10 10 0 0012 2zm0 18a8 8 0 110-16 8 8 0 010 16z" opacity=".4"/><path d="M12 6a6 6 0 100 12A6 6 0 0012 6zm0 10a4 4 0 110-8 4 4 0 010 8z" opacity=".7"/></svg>
-      </div>
-      Orbit Technologies
-    </a>
+  <div class="nav-w">
+    
+
+
+
+<a href="#" class="nav-logo" style="
+    display:flex;
+    align-items:center;
+    text-decoration:none;
+">
+
+    <div style="
+        display:flex;
+        align-items:center;
+        gap:12px;
+    ">
+
+        <!-- LOGO -->
+        <img src="images/logo3.png"
+             alt="Orbit Technologies"
+             style="
+                height:72px;
+                width:auto;
+                display:block;
+             ">
+
+        <!-- TEXT -->
+        <div style="
+            display:flex;
+            flex-direction:column;
+            line-height:1;
+        ">
+
+            <span style="
+                font-family:Arial Black,Arial,sans-serif;
+                font-size:40px;
+                font-weight:900;
+                color:#111827;
+                letter-spacing:4px;
+            ">
+                ORBIT
+            </span>
+
+            <span style="
+                font-family:Arial,sans-serif;
+                font-size:14px;
+                font-weight:700;
+                color:#2f7cff;
+                letter-spacing:6px;
+                margin-top:8px;
+            ">
+                TECHNOLOGIES
+            </span>
+
+        </div>
+
+    </div>
+
+</a>
+
+
+
+
     <ul class="nav-links">
       <li><a href="#industries">Industries</a></li>
       <li><a href="#products">Products</a></li>
       <li><a href="#orbit-bi">Orbit BI</a></li>
       <li><a href="#about">About</a></li>
-      <li><a href="#contact" class="nav-cta">Get a Demo</a></li>
+      <li><a href="#contact" class="nav-cta">Request Demo</a></li>
     </ul>
   </div>
 </nav>
 
 <!-- HERO -->
-<section style="padding-top:0;">
+<div class="bg-hero hero-wrap">
+  <div class="animated-bg">
+    <div class="tech-grid"></div>
+    <div class="bg-orb blue"></div>
+    <div class="bg-orb gold"></div>
+    <div class="bg-orb cyan"></div>
+    <div class="data-line one"></div>
+    <div class="data-line two"></div>
+    <div class="data-line three"></div>
+    <div id="particles"></div>
+  </div>
   <div class="hero">
-    <div class="hero-text fade-in">
-      <div class="hero-badge"><span></span>Trusted by businesses across Punjab</div>
-      <h1>Software that <em>understands</em> your business</h1>
-      <p>From jewellers in Amritsar to diagnostic centres in Ludhiana — we've built industry-specific software for 21 years. Simple, powerful, and made for Indian SMBs.</p>
-      <div class="hero-actions">
-        <a href="#contact" class="btn-primary">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 11.5 19.79 19.79 0 01.01 2.87 2 2 0 012 .69h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 8.09a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92z"/></svg>
-          Book a Free Demo
-        </a>
-        <a href="#products" class="btn-secondary">See All Products →</a>
+    <div class="r">
+      <div class="hero-eyebrow">Enterprise Software Solutions · Est. 2003</div>
+      <h1>Software engineered for <span>Indian business</span> excellence</h1>
+      <p class="hero-sub">Orbit Technologies delivers purpose-built, industry-specific software for Indian SMEs. 32 specialised products across 15+ sectors. Full GST compliance, WhatsApp automation, and now AI-powered intelligence — built in from the ground up.</p>
+      <div class="hero-ctas">
+        <a href="#contact" class="cta-main">Schedule a Demonstration</a>
+        <a href="#products" class="cta-out">Explore All 32 Products</a>
       </div>
       <div class="hero-stats">
-        <div class="stat"><div class="stat-num">21+</div><div class="stat-label">Years experience</div></div>
-        <div class="stat"><div class="stat-num">31</div><div class="stat-label">Software products</div></div>
-        <div class="stat"><div class="stat-num">500+</div><div class="stat-label">Happy clients</div></div>
+        <div class="hs"><div class="hs-n">21</div><div class="hs-l">Years in operation</div></div>
+        <div class="hs"><div class="hs-n">31</div><div class="hs-l">Software products</div></div>
+        <div class="hs"><div class="hs-n">500+</div><div class="hs-l">Active clients</div></div>
       </div>
     </div>
-    <div class="hero-visual fade-in" style="transition-delay:.2s;">
-      <div style="position:relative;">
-        <div class="float-chip fc1">📈 Recovery up 34%</div>
-        <div class="float-chip fc2">✅ GST e-Invoice ready</div>
-        <div class="hero-card">
-          <div class="hero-card-head">
-            <div class="hc-icon" style="background:#FFF0E8;">💎</div>
-            <div><div class="hc-title">Jewellery Business Report</div><div class="hc-sub">Today — live summary</div></div>
+        <div class="r2">
+      <div style="position:relative;border-radius:16px;overflow:hidden;box-shadow:0 32px 80px rgba(0,0,0,0.5);height:460px;">
+        <img
+          src="/images/web1.png"
+          alt="Orbit Technologies team"
+          style="width:100%;height:100%;object-fit:cover;display:block;"/>
+        <!-- Overlay gradient at bottom -->
+        <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(6,8,15,0.72) 0%,transparent 55%);pointer-events:none;"></div>
+        <!-- Floating stat chips -->
+        <div style="position:absolute;bottom:28px;left:24px;right:24px;display:flex;gap:12px;">
+          <div style="background:rgba(6,8,15,0.85);backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,0.1);border-radius:10px;padding:12px 18px;flex:1;">
+            <div style="font-size:.65rem;color:rgba(255,255,255,0.5);letter-spacing:.1em;text-transform:uppercase;margin-bottom:4px;">Active Clients</div>
+            <div style="font-size:1.6rem;font-weight:800;color:#FFFFFF;">500+</div>
           </div>
-          <div class="hc-bar-wrap">
-            <div class="hc-bar-label"><span>Gold 22K sales</span><span>₹4.2L</span></div>
-            <div class="hc-bar"><div class="hc-bar-fill" style="width:78%;"></div></div>
+          <div style="background:rgba(6,8,15,0.85);backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,0.1);border-radius:10px;padding:12px 18px;flex:1;">
+            <div style="font-size:.65rem;color:rgba(255,255,255,0.5);letter-spacing:.1em;text-transform:uppercase;margin-bottom:4px;">Products</div>
+            <div style="font-size:1.6rem;font-weight:800;color:#FFFFFF;">31</div>
           </div>
-          <div class="hc-bar-wrap">
-            <div class="hc-bar-label"><span>Silver items</span><span>₹1.1L</span></div>
-            <div class="hc-bar"><div class="hc-bar-fill" style="width:42%;background:#FBB040;"></div></div>
-          </div>
-          <div class="hc-bar-wrap">
-            <div class="hc-bar-label"><span>Overdue recovery</span><span>₹68K</span></div>
-            <div class="hc-bar"><div class="hc-bar-fill" style="width:60%;background:#2ECC71;"></div></div>
-          </div>
-          <div style="margin-top:18px;font-size:.82rem;color:var(--muted);background:var(--sky);border-radius:10px;padding:10px 14px;font-weight:600;">
-            🤖 AI says: 3 high-value customers haven't bought in 60 days — follow up now!
+          <div style="background:rgba(6,8,15,0.85);backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,0.1);border-radius:10px;padding:12px 18px;flex:1;">
+            <div style="font-size:.65rem;color:rgba(255,255,255,0.5);letter-spacing:.1em;text-transform:uppercase;margin-bottom:4px;">Years</div>
+            <div style="font-size:1.6rem;font-weight:800;color:#FFFFFF;">21+</div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
-
-<!-- CLIENTS -->
-<div class="clients">
-  <div class="clients-inner fade-in">
-    <p>Businesses that trust us</p>
-    <div class="clients-logos">
-      <div class="client-pill">Sigma Scan Center</div>
-      <div class="client-pill">A.S. Trader</div>
-      <div class="client-pill">VED PARKASH GUPTA & SONS</div>
-      <div class="client-pill">Mehnaaz Jewels</div>
-      <div class="client-pill">& many more across Punjab</div>
     </div>
   </div>
 </div>
 
+<!-- TICKER -->
+<div class="ticker">
+  <div class="ticker-inner">
+    <span class="ti">College ERP</span><span class="ti-dot">·</span>
+    <span class="ti">Library Automation</span><span class="ti-dot">·</span>
+    <span class="ti">Diagnostic Management</span><span class="ti-dot">·</span>
+    <span class="ti">Hospital Management</span><span class="ti-dot">·</span>
+    <span class="ti">Gold &amp; Jewellery Software</span><span class="ti-dot">·</span>
+    <span class="ti">GST Billing</span><span class="ti-dot">·</span>
+    <span class="ti">POS Restaurant</span><span class="ti-dot">·</span>
+    <span class="ti">Warehouse Management</span><span class="ti-dot">·</span>
+    <span class="ti">Import Export</span><span class="ti-dot">·</span>
+    <span class="ti">Advocate Office</span><span class="ti-dot">·</span>
+    <span class="ti">Salon Software</span><span class="ti-dot">·</span>
+    <span class="ti">WhatsApp Automation</span><span class="ti-dot">·</span>
+    <span class="ti">AI Business Intelligence</span><span class="ti-dot">·</span>
+    <span class="ti">College ERP</span><span class="ti-dot">·</span>
+    <span class="ti">Library Automation</span><span class="ti-dot">·</span>
+    <span class="ti">Diagnostic Management</span><span class="ti-dot">·</span>
+    <span class="ti">Hospital Management</span><span class="ti-dot">·</span>
+    <span class="ti">Gold &amp; Jewellery Software</span><span class="ti-dot">·</span>
+    <span class="ti">GST Billing</span><span class="ti-dot">·</span>
+    <span class="ti">POS Restaurant</span><span class="ti-dot">·</span>
+    <span class="ti">Warehouse Management</span><span class="ti-dot">·</span>
+    <span class="ti">Import Export</span><span class="ti-dot">·</span>
+    <span class="ti">Advocate Office</span><span class="ti-dot">·</span>
+    <span class="ti">Salon Software</span><span class="ti-dot">·</span>
+    <span class="ti">WhatsApp Automation</span><span class="ti-dot">·</span>
+    <span class="ti">AI Business Intelligence</span><span class="ti-dot">·</span>
+  </div>
+</div>
+
 <!-- INDUSTRIES -->
-<section id="industries">
-  <div class="section-inner fade-in">
-    <div class="section-tag">Industries we serve</div>
-    <h2 class="section-title">We speak your business language</h2>
-    <p class="section-sub">Whether you run a jewellery shop, clinic, or trading firm — we have software built exactly for your industry, not a generic product that barely fits.</p>
-    <div class="industries-grid">
-      <div class="ind-card"><div class="ind-icon">💍</div><div class="ind-name">Jewellers</div><div class="ind-count">Gold, silver & diamond billing</div></div>
-      <div class="ind-card"><div class="ind-icon">🏥</div><div class="ind-name">Diagnostic Centres</div><div class="ind-count">Lab reports & patient management</div></div>
-      <div class="ind-card"><div class="ind-icon">📦</div><div class="ind-name">Traders & Distributors</div><div class="ind-count">GST billing & stock management</div></div>
-      <div class="ind-card"><div class="ind-icon">🏭</div><div class="ind-name">Manufacturers</div><div class="ind-count">Production & inventory tracking</div></div>
-      <div class="ind-card"><div class="ind-icon">💊</div><div class="ind-name">Pharma & Medical</div><div class="ind-count">Expiry & batch management</div></div>
-      <div class="ind-card"><div class="ind-icon">🧾</div><div class="ind-name">Accounting Firms</div><div class="ind-count">GST returns & financial reports</div></div>
-      <div class="ind-card"><div class="ind-icon">✂️</div><div class="ind-name">Salons & Spas</div><div class="ind-count">Bookings & WhatsApp reminders</div></div>
-      <div class="ind-card"><div class="ind-icon">🍽️</div><div class="ind-name">Restaurants</div><div class="ind-count">Table management & KOT billing</div></div>
+<div id="industries" style="position:relative;overflow:hidden;background:#eef2f6;">
+  <div style="position:absolute;inset:0;background-image:url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1600&q=70&fit=crop');background-size:cover;background-position:center;opacity:0.03;pointer-events:none;"></div>
+  <div class="section r">
+    <div class="s-eye">Industries Served</div>
+    <h2 class="s-head">15+ industries.<br>One trusted partner.</h2>
+    <p class="s-sub">Every product is engineered from scratch for its sector's compliance requirements, workflows, and daily realities — not adapted from a generic template.</p>
+    <div class="gold-rule"></div>
+    <div class="ind-grid">
+      <div class="ind-cell"><div class="ind-n">01–02</div><div class="ind-name">Education</div><div class="ind-desc">College ERP, library automation for schools and colleges, and institute management systems.</div></div>
+      <div class="ind-cell"><div class="ind-n">03–05</div><div class="ind-name">Accounting &amp; Trade</div><div class="ind-desc">Retail accounting, FMCG distribution, transport management with full GST compliance.</div></div>
+      <div class="ind-cell"><div class="ind-n">06–08</div><div class="ind-name">Healthcare</div><div class="ind-desc">Diagnostic centres, clinical pathology, hospital management, OPD, and homeopathy practice systems.</div></div>
+      <div class="ind-cell"><div class="ind-n">09, 31</div><div class="ind-name">Jewellery &amp; Gold</div><div class="ind-desc">Desktop and web goldsmith software, barcode-enabled gold jewellery stock management systems.</div></div>
+      <div class="ind-cell"><div class="ind-n">10–14</div><div class="ind-name">Logistics &amp; Services</div><div class="ind-desc">Courier agencies, restaurant &amp; bar POS, dairy management, parking solutions, medical shops.</div></div>
+      <div class="ind-cell"><div class="ind-n">15–18</div><div class="ind-name">Professional Services</div><div class="ind-desc">Advocate office automation, marketing agencies, media advertising agencies, CA office management.</div></div>
+      <div class="ind-cell"><div class="ind-n">19–22</div><div class="ind-name">Specialised Business</div><div class="ind-desc">Immigration services, salon management, CA office automation, and survey agency systems.</div></div>
+      <div class="ind-cell"><div class="ind-n">23–31</div><div class="ind-name">Retail &amp; Industry</div><div class="ind-desc">Footwear, tailoring, textile, import-export, digital catalogue, barcode warehousing, and patient management.</div></div>
     </div>
   </div>
-</section>
+</div>
 
-<!-- PRODUCTS -->
-<section id="products" style="background:var(--sky);">
-  <div class="section-inner fade-in">
-    <div class="section-tag">Our products</div>
-    <h2 class="section-title">31 products. One trusted team.</h2>
-    <p class="section-sub">Each product is designed from scratch for its industry — not adapted from a generic template. That's why our clients stick with us for years.</p>
-    <div class="products-grid">
-      <div class="prod-card">
-        <div class="prod-tag">Jewellery</div>
-        <div class="prod-title">Orbit Jewels — Gold & Silver Billing</div>
-        <div class="prod-desc">Complete jewellery shop management with hallmarking, karigar tracking, and gold rate-based billing. HUID & GST ready.</div>
-        <ul class="prod-features">
-          <li>Gold/silver rate auto-fetch</li>
-          <li>Karigar job work & wage calculation</li>
-          <li>Tag printing with QR codes</li>
-          <li>GST e-Invoice & e-Way Bill</li>
-          <li>WhatsApp bill sharing</li>
-        </ul>
-      </div>
-      <div class="prod-card">
-        <div class="prod-tag">Diagnostics</div>
-        <div class="prod-title">Orbit Lab — Diagnostic Centre Software</div>
-        <div class="prod-desc">From patient registration to report delivery — everything in one screen. Integrated with WhatsApp for instant report sharing.</div>
-        <ul class="prod-features">
-          <li>Patient registration & history</li>
-          <li>Test result entry & report printing</li>
-          <li>WhatsApp report delivery</li>
-          <li>Doctor referral tracking</li>
-          <li>Monthly MIS reports</li>
-        </ul>
-      </div>
-      <div class="prod-card">
-        <div class="prod-tag">Trading</div>
-        <div class="prod-title">Orbit Trader — GST Billing Software</div>
-        <div class="prod-desc">Fast, accurate billing for traders and distributors. Full GST compliance with e-Invoice, e-Way Bill, and GSTR filing support.</div>
-        <ul class="prod-features">
-          <li>Multi-party billing with GST</li>
-          <li>Stock & inventory management</li>
-          <li>Ledger & outstanding tracking</li>
-          <li>e-Invoice via mygstcafe API</li>
-          <li>BUSY Accounting integration</li>
-        </ul>
-      </div>
-      <div class="prod-card">
-        <div class="prod-tag">AI-Powered</div>
-        <div class="prod-title">Orbit BI — Business Intelligence</div>
-        <div class="prod-desc">Your BUSY Accounting data, now with AI insights. Plain-language reports, overdue recovery, and smart alerts — all automated.</div>
-        <ul class="prod-features">
-          <li>Reads directly from BUSY .bds files</li>
-          <li>AI-generated layman reports</li>
-          <li>Overdue customer tracking</li>
-          <li>WhatsApp recovery messages</li>
-          <li>Works in the background, 24x7</li>
-        </ul>
-      </div>
-      <div class="prod-card">
-        <div class="prod-tag">WhatsApp</div>
-        <div class="prod-title">Orbit WA Gateway — WhatsApp API</div>
-        <div class="prod-desc">Send bills, reports, and reminders via WhatsApp directly from any software. Multi-user, multi-number, self-hosted.</div>
-        <ul class="prod-features">
-          <li>Connect multiple WhatsApp numbers</li>
-          <li>Send PDF bills & images</li>
-          <li>API integration for any software</li>
-          <li>Message logs & delivery status</li>
-          <li>No per-message charges</li>
-        </ul>
-      </div>
-      <div class="prod-card">
-        <div class="prod-tag">Salon</div>
-        <div class="prod-title">Orbit Salon — Salon & Spa Software</div>
-        <div class="prod-desc">Appointment booking, staff management, and automated WhatsApp reminders — so you can focus on your clients, not paperwork.</div>
-        <ul class="prod-features">
-          <li>Online & walk-in bookings</li>
-          <li>Staff attendance & commission</li>
-          <li>WhatsApp appointment reminders</li>
-          <li>Service & package billing</li>
-          <li>Loyalty points & offers</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
+<!-- ALL 31 PRODUCTS -->
+<div id="products" class="bg-alt">
+  <div class="section r">
+    <div class="s-eye">Complete Product Portfolio</div>
+    <h2 class="s-head">All 32 products.<br>One accountable team.</h2>
+    <p class="s-sub">Every product is actively maintained, GST-compliant where applicable, and supported directly by our Amritsar office. Web and desktop variants available for select products.</p>
+    <div class="gold-rule"></div>
 
-<!-- WHY US -->
-<section id="about" class="why">
-  <div class="section-inner fade-in">
-    <div class="section-tag" style="background:rgba(247,108,47,.2);color:#FFAA80;">Why choose us</div>
-    <h2 class="section-title">21 years. Still learning. Still improving.</h2>
-    <p class="section-sub">We're not a startup promising to change the world. We're a team from Amritsar that has quietly helped hundreds of businesses run smoother — one software at a time.</p>
-    <div class="why-grid">
-      <div class="why-card"><div class="why-num">21</div><div class="why-title">Years of experience</div><div class="why-desc">We've seen businesses grow from single counters to multi-branch operations. We adapt with you.</div></div>
-      <div class="why-card"><div class="why-num">31</div><div class="why-title">Industry-specific products</div><div class="why-desc">Not one size fits all. Every product is purpose-built for its industry's real needs and workflows.</div></div>
-      <div class="why-card"><div class="why-num">500+</div><div class="why-title">Clients served</div><div class="why-desc">From small shops to growing enterprises — clients across Punjab trust us for their daily operations.</div></div>
-      <div class="why-card"><div class="why-num">₹0</div><div class="why-title">Hidden charges</div><div class="why-desc">No surprise fees. What we quote is what you pay. AMC plans are simple and transparent.</div></div>
+    <div class="prod-search">
+      
+      <button class="prod-filter" onclick="filterProds('education',this)">Education</button>
+      <button class="prod-filter" onclick="filterProds('healthcare',this)">Healthcare</button>
+      <button class="prod-filter active" onclick="filterProds('jewellery',this)">Jewellery</button>
+      <button class="prod-filter" onclick="filterProds('trade',this)">Trade &amp; Logistics</button>
+      <button class="prod-filter" onclick="filterProds('professional',this)">Professional</button>
+      <button class="prod-filter" onclick="filterProds('retail',this)">Retail &amp; Industry</button>
+    </div>
+
+    <div class="prod-grid" id="prodGrid">
+
+      <div class="prod-card" data-cat="education"><div class="pc-num">01</div><div class="pc-cat">Education</div><div class="pc-name">College ERP Management System</div><span class="pc-tag">Admissions</span><span class="pc-tag">Fees</span><span class="pc-tag">Attendance</span><span class="pc-tag">Exams</span></div>
+
+      <div class="prod-card" data-cat="education"><div class="pc-num">02</div><div class="pc-cat">Education</div><div class="pc-name">Library Automation for Schools and Colleges</div><span class="pc-tag">Book Catalogue</span><span class="pc-tag">Issue/Return</span><span class="pc-tag">Fine Mgmt</span></div>
+
+      <div class="prod-card" data-cat="trade"><div class="pc-num">03</div><div class="pc-cat">Accounting &amp; Trade</div><div class="pc-name">Accounting Solutions for Retail Outlets</div><span class="pc-tag">GST Billing</span><span class="pc-tag">Stock</span><span class="pc-tag">Ledger</span><span class="pc-tag">Reports</span></div>
+
+      <div class="prod-card" data-cat="trade"><div class="pc-num">04</div><div class="pc-cat">Accounting &amp; Trade</div><div class="pc-name">Accounting Solutions for FMCG Distributors</div><span class="pc-tag">Distribution</span><span class="pc-tag">GST</span><span class="pc-tag">Route Mgmt</span></div>
+
+      <div class="prod-card" data-cat="trade"><div class="pc-num">05</div><div class="pc-cat">Logistics</div><div class="pc-name">Software for Transporters</div><span class="pc-tag">Lorry Receipt</span><span class="pc-tag">Freight</span><span class="pc-tag">GST e-Way</span></div>
+
+      <div class="prod-card" data-cat="healthcare"><div class="pc-num">06</div><div class="pc-cat">Healthcare</div><div class="pc-name">Diagnostic Management</div><span class="pc-tag">Patient Reg.</span><span class="pc-tag">Reports</span><span class="pc-tag">WhatsApp</span></div>
+
+      <div class="prod-card" data-cat="healthcare"><div class="pc-num">07</div><div class="pc-cat">Healthcare</div><div class="pc-name">Clinical Pathology Software</div><span class="pc-tag">Lab Tests</span><span class="pc-tag">Report Print</span><span class="pc-tag">Referrals</span></div>
+
+      <div class="prod-card" data-cat="healthcare"><div class="pc-num">08</div><div class="pc-cat">Healthcare</div><div class="pc-name">Hospital Management System</div><span class="pc-tag">IPD/OPD</span><span class="pc-tag">Pharmacy</span><span class="pc-tag">Billing</span><span class="pc-tag">Wards</span></div>
+
+      <div class="prod-card" data-cat="jewellery"><div class="pc-num">09</div><div class="pc-cat">Jewellery</div><div class="pc-name">Software for Goldsmiths</div><span class="pc-web">Web + Desktop</span><span class="pc-tag">Karigar</span><span class="pc-tag">Gold Rate</span><span class="pc-tag">Job Work</span></div>
+
+      <div class="prod-card" data-cat="trade"><div class="pc-num">10</div><div class="pc-cat">Logistics</div><div class="pc-name">Software for Courier Agencies</div><span class="pc-tag">Consignment</span><span class="pc-tag">Tracking</span><span class="pc-tag">Delivery</span></div>
+
+      <div class="prod-card" data-cat="trade"><div class="pc-num">11</div><div class="pc-cat">Food &amp; Beverage</div><div class="pc-name">POS Software for Restaurants and Bar</div><span class="pc-tag">Table Mgmt</span><span class="pc-tag">KOT</span><span class="pc-tag">GST Billing</span></div>
+
+      <div class="prod-card" data-cat="trade"><div class="pc-num">12</div><div class="pc-cat">Dairy</div><div class="pc-name">Software for Dairies</div><span class="pc-tag">Milk Collection</span><span class="pc-tag">Fat Testing</span><span class="pc-tag">Member Accts</span></div>
+
+      <div class="prod-card" data-cat="trade"><div class="pc-num">13</div><div class="pc-cat">Parking</div><div class="pc-name">Parking Management Solutions</div><span class="pc-tag">Token System</span><span class="pc-tag">Billing</span><span class="pc-tag">Reports</span></div>
+
+      <div class="prod-card" data-cat="retail"><div class="pc-num">14</div><div class="pc-cat">Medical Retail</div><div class="pc-name">Software for Medical Shops</div><span class="pc-tag">Expiry Alert</span><span class="pc-tag">GST</span><span class="pc-tag">Batch Mgmt</span></div>
+
+      <div class="prod-card" data-cat="professional"><div class="pc-num">15</div><div class="pc-cat">Legal</div><div class="pc-name">Software for Advocates</div><span class="pc-web">Web + Desktop</span><span class="pc-tag">Case Mgmt</span><span class="pc-tag">Hearings</span><span class="pc-tag">Billing</span></div>
+
+      <div class="prod-card" data-cat="professional"><div class="pc-num">16</div><div class="pc-cat">Marketing</div><div class="pc-name">Software for Marketing Agencies</div><span class="pc-tag">Client Mgmt</span><span class="pc-tag">Campaigns</span><span class="pc-tag">Billing</span></div>
+
+      <div class="prod-card" data-cat="healthcare"><div class="pc-num">17</div><div class="pc-cat">Healthcare</div><div class="pc-name">Software for OPD in Hospitals</div><span class="pc-tag">Queue Mgmt</span><span class="pc-tag">Prescriptions</span><span class="pc-tag">Reports</span></div>
+
+      <div class="prod-card" data-cat="professional"><div class="pc-num">18</div><div class="pc-cat">Media</div><div class="pc-name">Software for Media Advertising Agencies</div><span class="pc-tag">Campaigns</span><span class="pc-tag">Space Booking</span><span class="pc-tag">Invoicing</span></div>
+
+      <div class="prod-card" data-cat="professional"><div class="pc-num">19</div><div class="pc-cat">Immigration</div><div class="pc-name">Software for Immigration Services</div><span class="pc-tag">Case Tracking</span><span class="pc-tag">Documents</span><span class="pc-tag">Clients</span></div>
+
+      <div class="prod-card" data-cat="retail"><div class="pc-num">20</div><div class="pc-cat">Beauty &amp; Wellness</div><div class="pc-name">Software for Salons</div><span class="pc-tag">Appointments</span><span class="pc-tag">Staff Comm.</span><span class="pc-tag">WhatsApp</span></div>
+
+      <div class="prod-card" data-cat="professional"><div class="pc-num">21</div><div class="pc-cat">Accounting</div><div class="pc-name">Chartered Accountants Office Automation</div><span class="pc-tag">Multi-Client</span><span class="pc-tag">GST Returns</span><span class="pc-tag">TDS</span></div>
+
+      <div class="prod-card" data-cat="professional"><div class="pc-num">22</div><div class="pc-cat">Survey</div><div class="pc-name">Software for Survey Agencies</div><span class="pc-tag">Field Data</span><span class="pc-tag">Reports</span><span class="pc-tag">Analytics</span></div>
+
+      <div class="prod-card" data-cat="retail"><div class="pc-num">23</div><div class="pc-cat">Retail</div><div class="pc-name">Software for Footwear Retail Outlets</div><span class="pc-tag">Size/Colour Grid</span><span class="pc-tag">GST</span><span class="pc-tag">Stock</span></div>
+
+      <div class="prod-card" data-cat="retail"><div class="pc-num">24</div><div class="pc-cat">Fashion</div><div class="pc-name">Software for Tailoring Services</div><span class="pc-tag">Measurements</span><span class="pc-tag">Orders</span><span class="pc-tag">Delivery</span></div>
+
+      <div class="prod-card" data-cat="retail"><div class="pc-num">25</div><div class="pc-cat">Textile</div><div class="pc-name">Software for Textile Industry</div><span class="pc-tag">Fabric Stock</span><span class="pc-tag">GST</span><span class="pc-tag">Production</span></div>
+
+      <div class="prod-card" data-cat="trade"><div class="pc-num">26</div><div class="pc-cat">International Trade</div><div class="pc-name">Import and Export Software</div><span class="pc-tag">Customs</span><span class="pc-tag">Forex</span><span class="pc-tag">Shipment</span><span class="pc-tag">Docs</span></div>
+
+      <div class="prod-card" data-cat="professional"><div class="pc-num">27</div><div class="pc-cat">Sales</div><div class="pc-name">Digital Catalogue and Quotation Software</div><span class="pc-tag">Product Catalogue</span><span class="pc-tag">PDF Quotes</span><span class="pc-tag">WhatsApp</span></div>
+
+      <div class="prod-card" data-cat="trade"><div class="pc-num">28</div><div class="pc-cat">Warehouse</div><div class="pc-name">Barcode Enabled Warehouse Management</div><span class="pc-tag">Barcode Scan</span><span class="pc-tag">Stock In/Out</span><span class="pc-tag">Locations</span></div>
+
+      <div class="prod-card" data-cat="education"><div class="pc-num">29</div><div class="pc-cat">Education</div><div class="pc-name">Institute Management Software</div><span class="pc-tag">Fees</span><span class="pc-tag">Batches</span><span class="pc-tag">Attendance</span><span class="pc-tag">Certificates</span></div>
+
+      <div class="prod-card" data-cat="healthcare"><div class="pc-num">30</div><div class="pc-cat">Healthcare</div><div class="pc-name">Patient Management for Homeopathy Doctors</div><span class="pc-tag">Case History</span><span class="pc-tag">Prescriptions</span><span class="pc-tag">Follow-up</span></div>
+
+      <div class="prod-card" data-cat="jewellery"><div class="pc-num">31</div><div class="pc-cat">Jewellery</div><div class="pc-name">Gold Jewellery Barcode Stock Management</div><span class="pc-web">Web + Desktop</span><span class="pc-tag">Barcode Tags</span><span class="pc-tag">HUID</span><span class="pc-tag">Stock</span></div>
+
+    
+<div class="prod-card" data-cat="professional">
+  <div class="pc-num">32</div>
+  <div class="pc-cat">Communication & Automation</div>
+  <div class="pc-name">WhatsApp Gateway Development</div>
+  <span class="pc-tag">Bulk Messaging</span>
+  <span class="pc-tag">API Integration</span>
+  <span class="pc-tag">OTP</span>
+  <span class="pc-tag">Notifications</span>
+</div>
+
     </div>
   </div>
-</section>
+</div>
 
 <!-- ORBIT BI -->
-<section id="orbit-bi" class="bi-section">
-  <div class="section-inner">
-    <div class="bi-inner fade-in">
+<div id="orbit-bi" style="position:relative;overflow:hidden;background:#eef3f8;">
+  <div style="position:absolute;inset:0;background-image:url('https://images.unsplash.com/photo-1553877522-43269d4ea984?w=1600&q=70&fit=crop');background-size:cover;background-position:center;opacity:0.045;pointer-events:none;"></div>
+  <div class="section r">
+    <div class="bi-wrap">
       <div>
-        <div class="bi-badge">🤖 Introducing Orbit BI</div>
-        <h2 class="bi-title">Your business data, explained in plain Hindi & English</h2>
-        <p class="bi-desc">If you use BUSY Accounting Software, Orbit BI plugs right in — no data entry, no exports. It reads your data automatically and gives you AI-powered insights every day.</p>
-        <ul class="bi-list">
-          <li><div class="check"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></div><span>Which customers owe you the most money — and sends WhatsApp reminders automatically</span></li>
-          <li><div class="check"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></div><span>Which products are selling well and which are sitting dead in stock</span></li>
-          <li><div class="check"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></div><span>Month-by-month performance — explained in simple language, not just numbers</span></li>
-          <li><div class="check"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></div><span>Works silently in the background — you get a WhatsApp summary every morning</span></li>
-        </ul>
-        <a href="#contact" class="btn-primary">Get Early Access →</a>
+        <div class="bi-badge">Flagship Launch · Orbit BI</div>
+        <h2 class="s-head" style="margin-bottom:14px;">AI-powered intelligence for your accounting data</h2>
+        <p class="s-sub">Orbit BI connects directly to your accounting software database and delivers plain-language business insights every day. No exports. No manual entry. No disruption.</p>
+        <div class="bi-feats">
+          <div class="bi-feat"><div class="bf-n">01</div><div><div class="bf-t">Automated overdue recovery</div><div class="bf-d">Ranks overdue customers by amount and days. Sends personalised WhatsApp follow-ups automatically on your behalf.</div></div></div>
+          <div class="bi-feat"><div class="bf-n">02</div><div><div class="bf-t">Plain-language AI analysis</div><div class="bf-d">Instead of raw tables, you receive a daily narrative — which parties are growing, which products are slowing, what needs action.</div></div></div>
+          <div class="bi-feat"><div class="bf-n">03</div><div><div class="bf-t">Zero data entry required</div><div class="bf-d">Reads your accounting database directly via OleDb. Runs silently in the background with no change to your current workflow.</div></div></div>
+          <div class="bi-feat"><div class="bf-n">04</div><div><div class="bf-t">Multi-tenant for CA firms</div><div class="bf-d">Manage multiple client accounting databases from one dashboard. Complete tenant isolation guarantees per-client data privacy.</div></div></div>
+        </div>
+        <div style="margin-top:36px;"><a href="#contact" class="cta-main">Request Early Access</a></div>
       </div>
-      <div>
-        <div class="bi-visual">
-          <div style="font-size:.8rem;font-weight:700;color:var(--muted);margin-bottom:16px;text-transform:uppercase;letter-spacing:.4px;">Monthly Sales by Party — AI Analysis</div>
-          <div class="bi-chart-row">
-            <div class="bi-chart-label">Ramesh & Co.</div>
-            <div class="bi-chart-bar-outer"><div class="bi-chart-bar-inner" style="width:85%;background:var(--orange);">₹3.4L</div></div>
+      <div class="r2">
+        <div class="bi-chart">
+          <div class="bc-top"></div>
+          <div class="bc-head"><span class="bc-title">Party-wise Sales Analysis</span><span class="bc-period">April 2025</span></div>
+          <div class="bc-body">
+            <div class="bc-row"><div class="bc-rh"><span class="bc-p">Ramesh &amp; Co.</span><span class="bc-a">&#8377;3,40,000</span></div><div class="bc-track"><div class="bc-fill" style="width:85%;"></div></div></div>
+            <div class="bc-row"><div class="bc-rh"><span class="bc-p">Gupta Traders</span><span class="bc-a">&#8377;2,50,000</span></div><div class="bc-track"><div class="bc-fill" style="width:62%;opacity:.76;"></div></div></div>
+            <div class="bc-row"><div class="bc-rh"><span class="bc-p">Sharma Jewels</span><span class="bc-a">&#8377;1,80,000</span></div><div class="bc-track"><div class="bc-fill" style="width:44%;opacity:.56;"></div></div></div>
+            <div class="bc-row"><div class="bc-rh"><span class="bc-p">Kapoor Brothers</span><span class="bc-a">&#8377;1,10,000</span></div><div class="bc-track"><div class="bc-fill" style="width:28%;opacity:.4;"></div></div></div>
+            <div class="bc-row" style="margin-bottom:0;"><div class="bc-rh"><span class="bc-p">Verma Enterprises</span><span class="bc-a">&#8377;75,000</span></div><div class="bc-track"><div class="bc-fill" style="width:18%;opacity:.28;"></div></div></div>
+            <div class="bc-ai"><div class="bc-ai-t">AI Analysis · Claude</div><div class="bc-ai-d">Ramesh &amp; Co. carries &#8377;82,000 overdue since 47 days — escalated WhatsApp follow-up recommended. Gupta Traders shows 18% month-on-month growth.</div></div>
           </div>
-          <div class="bi-chart-row">
-            <div class="bi-chart-label">Gupta Traders</div>
-            <div class="bi-chart-bar-outer"><div class="bi-chart-bar-inner" style="width:62%;background:#4A90D9;">₹2.5L</div></div>
-          </div>
-          <div class="bi-chart-row">
-            <div class="bi-chart-label">Sharma Jewels</div>
-            <div class="bi-chart-bar-outer"><div class="bi-chart-bar-inner" style="width:44%;background:#2ECC71;">₹1.8L</div></div>
-          </div>
-          <div class="bi-chart-row">
-            <div class="bi-chart-label">Kapoor Bros.</div>
-            <div class="bi-chart-bar-outer"><div class="bi-chart-bar-inner" style="width:28%;background:#FBB040;">₹1.1L</div></div>
-          </div>
-          <div class="bi-ai-note">
-            <span style="font-size:1.2rem;">🤖</span>
-            <span><strong>AI Insight:</strong> Ramesh & Co. is your top buyer but has ₹82,000 overdue since 45 days. Suggested action: Send a polite WhatsApp reminder today.</span>
-          </div>
+          <div class="bc-foot"><span class="bcf-l">Orbit BI Analytics Platform</span><span class="bcf-r">Synced 4 min ago</span></div>
         </div>
       </div>
     </div>
   </div>
-</section>
+</div>
+
+
+<!-- ORBIT WA -->
+<div id="orbit-wa" style="position:relative;overflow:hidden;background:#eef3f8;">
+  <div style="position:absolute;inset:0;background:radial-gradient(circle at top right,rgba(37,211,102,0.12),transparent 40%);pointer-events:none;"></div>
+
+  <div class="section r">
+    <div class="bi-wrap">
+
+      <div>
+        <div class="bi-badge" style="background:rgba(37,211,102,0.08);border-color:rgba(37,211,102,0.25);color:#25D366;">
+          New Platform · Orbit WA
+        </div>
+
+        <h2 class="s-head" style="margin-bottom:14px;">
+          WhatsApp automation<br>for modern businesses
+        </h2>
+
+        <p class="s-sub">
+          Orbit WA enables businesses to send bulk WhatsApp messages, invoices, OTPs,
+          payment reminders, reports, promotions and automated customer notifications directly
+          through secure WhatsApp gateway integrations.
+        </p>
+
+        <div class="bi-feats">
+
+          <div class="bi-feat">
+            <div class="bf-n">01</div>
+            <div>
+              <div class="bf-t">Bulk WhatsApp Messaging</div>
+              <div class="bf-d">
+                Send promotional campaigns, reminders, invoices and alerts to thousands of customers instantly.
+              </div>
+            </div>
+          </div>
+
+          <div class="bi-feat">
+            <div class="bf-n">02</div>
+            <div>
+              <div class="bf-t">API & Software Integration</div>
+              <div class="bf-d">
+                Connect Orbit WA directly with billing software, ERP, hospital systems and CRMs.
+              </div>
+            </div>
+          </div>
+
+          <div class="bi-feat">
+            <div class="bf-n">03</div>
+            <div>
+              <div class="bf-t">OTP & Transaction Alerts</div>
+              <div class="bf-d">
+                Deliver OTPs, payment confirmations, delivery updates and booking alerts automatically.
+              </div>
+            </div>
+          </div>
+
+          <div class="bi-feat">
+            <div class="bf-n">04</div>
+            <div>
+              <div class="bf-t">AI Chatbot & Auto Replies</div>
+              <div class="bf-d">
+                Automate customer support, lead collection and enquiry handling with AI-powered chat workflows.
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div style="margin-top:36px;">
+          <a href="#contact" class="cta-main" style="background:#25D366;">
+            Request Orbit WA Demo
+          </a>
+        </div>
+      </div>
+
+      <div class="r2">
+        <div class="bi-chart">
+
+          <div class="bc-top" style="background:linear-gradient(90deg,#25D366,#128C7E);"></div>
+
+          <div class="bc-head">
+            <span class="bc-title">WhatsApp Delivery Dashboard</span>
+            <span class="bc-period">Live Gateway Status</span>
+          </div>
+
+          <div class="bc-body">
+
+            <div class="bc-row">
+              <div class="bc-rh">
+                <span class="bc-p">Promotional Messages</span>
+                <span class="bc-a">12,480 Sent</span>
+              </div>
+              <div class="bc-track">
+                <div class="bc-fill" style="width:92%;background:#25D366;"></div>
+              </div>
+            </div>
+
+            <div class="bc-row">
+              <div class="bc-rh">
+                <span class="bc-p">OTP Delivery Success</span>
+                <span class="bc-a">98.7%</span>
+              </div>
+              <div class="bc-track">
+                <div class="bc-fill" style="width:98%;background:#25D366;"></div>
+              </div>
+            </div>
+
+            <div class="bc-row">
+              <div class="bc-rh">
+                <span class="bc-p">Customer Replies</span>
+                <span class="bc-a">3,240</span>
+              </div>
+              <div class="bc-track">
+                <div class="bc-fill" style="width:74%;background:#25D366;"></div>
+              </div>
+            </div>
+
+            <div class="bc-row" style="margin-bottom:0;">
+              <div class="bc-rh">
+                <span class="bc-p">Automated Notifications</span>
+                <span class="bc-a">18,900</span>
+              </div>
+              <div class="bc-track">
+                <div class="bc-fill" style="width:88%;background:#25D366;"></div>
+              </div>
+            </div>
+
+            <div class="bc-ai" style="background:rgba(37,211,102,0.08);border-color:rgba(37,211,102,0.2);">
+              <div class="bc-ai-t" style="color:#25D366;">Orbit WA Insight</div>
+              <div class="bc-ai-d">
+                Automated payment reminders increased customer response rates by 43% this month.
+              </div>
+            </div>
+
+          </div>
+
+          <div class="bc-foot">
+            <span class="bcf-l">Orbit WA Gateway v1.0</span>
+            <span class="bcf-r" style="color:#25D366;">Connected & Live</span>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<!-- WHY -->
+<div id="about" class="bg-alt">
+  <div class="section r">
+    <div class="s-eye">Why Orbit Technologies</div>
+    <h2 class="s-head">Two decades of<br>uninterrupted service.</h2>
+    <p class="s-sub">Not a startup with a growth target. A domain-expert team from Amritsar that has helped hundreds of Indian businesses run more efficiently — one industry at a time.</p>
+    <div class="why-grid">
+      <div class="why-cell"><div class="why-n">21</div><div class="why-t">Years of continuous operation</div><div class="why-d">Founded in 2003. Through VAT, GST, e-Invoice, and now AI — we have kept our clients compliant and competitive throughout every transition.</div></div>
+      <div class="why-cell"><div class="why-n">31</div><div class="why-t">Industry-specific products</div><div class="why-d">Each product is built from scratch for its sector. Jewellery billing logic differs fundamentally from hospital management. We engineered both from the ground up.</div></div>
+      <div class="why-cell"><div class="why-n">500+</div><div class="why-t">Active client businesses</div><div class="why-d">From single-counter shops to multi-branch operations across Punjab and North India. Average client engagement exceeds five years.</div></div>
+      <div class="why-cell"><div class="why-n">0</div><div class="why-t">Hidden charges or surprises</div><div class="why-d">Transparent AMC plans, fixed pricing, no per-transaction fees. What we quote is exactly what clients pay — year after year.</div></div>
+    </div>
+  </div>
+</div>
 
 <!-- TESTIMONIALS -->
-<section id="testimonials" style="background:var(--sky);">
-  <div class="section-inner fade-in">
-    <div class="section-tag">What clients say</div>
-    <h2 class="section-title">They run better businesses now</h2>
+<div style="position:relative;overflow:hidden;background:#eef3f8;">
+  <div style="position:absolute;inset:0;background-image:url('https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=1600&q=70&fit=crop');background-size:cover;background-position:center top;opacity:0.035;pointer-events:none;"></div>
+  <div class="section r">
+    <div class="s-eye">Client Perspectives</div>
+    <h2 class="s-head">Trusted across Punjab<br>for over two decades.</h2>
     <div class="test-grid">
-      <div class="test-card">
-        <div class="stars">★★★★★</div>
-        <p class="test-quote">"Orbit's jewellery software has been with us for 8 years. The karigar tracking and gold billing save us 2 hours every single day. Can't imagine running without it."</p>
-        <div class="test-author"><div class="test-avatar">M</div><div><div class="test-name">Mukesh Gupta</div><div class="test-biz">Mehnaaz Jewels, Amritsar</div></div></div>
-      </div>
-      <div class="test-card">
-        <div class="stars">★★★★★</div>
-        <p class="test-quote">"Our diagnostic centre runs so much smoother now. Patients get their reports on WhatsApp within minutes. The software paid for itself in the first month."</p>
-        <div class="test-author"><div class="test-avatar">S</div><div><div class="test-name">Dr. Sukhwinder Singh</div><div class="test-biz">Sigma Scan Center, Ludhiana</div></div></div>
-      </div>
-      <div class="test-card">
-        <div class="stars">★★★★★</div>
-        <p class="test-quote">"GST filing used to take 2 days every month. With Orbit Trader and the e-Invoice integration, we're done in 2 hours. The team is always available on call — truly local support."</p>
-        <div class="test-author"><div class="test-avatar">A</div><div><div class="test-name">Amarjit Singh</div><div class="test-biz">A.S. Trader, Amritsar</div></div></div>
-      </div>
+      <div class="test-cell"><div class="tc-q">&ldquo;</div><p class="tc-text">Orbit's jewellery software has been integral to our operations for eight years. The karigar tracking and live gold-rate billing are features we have not encountered at this price point elsewhere.</p><div class="tc-rule"></div><div class="tc-name">Mukesh Gupta</div><div class="tc-co">Proprietor, Mehnaaz Jewels, Amritsar</div></div>
+      <div class="test-cell"><div class="tc-q">&ldquo;</div><p class="tc-text">Since deploying Orbit Lab, patient report turnaround has improved significantly. Reports are delivered via WhatsApp within minutes of data entry. Support responds same day — without exception.</p><div class="tc-rule"></div><div class="tc-name">Dr. Sukhwinder Singh</div><div class="tc-co">Director, Sigma Scan Center, Ludhiana</div></div>
+      <div class="test-cell"><div class="tc-q">&ldquo;</div><p class="tc-text">GST compliance was a significant challenge before Orbit Trader. The e-Invoice integration resolved it completely. Three years in — not a single compliance issue. Exactly what our business required.</p><div class="tc-rule"></div><div class="tc-name">Amarjit Singh</div><div class="tc-co">Partner, A.S. Trader, Amritsar</div></div>
     </div>
   </div>
-</section>
+</div>
 
-<!-- CTA / CONTACT -->
-<section id="contact" class="cta-section">
-  <div class="cta-inner fade-in">
-    <h2>Ready to make your business smarter?</h2>
-    <p>Tell us your business type and we'll show you exactly how Orbit can help — no pressure, no jargon, just a friendly chat.</p>
-    <div class="cta-form">
-      <input class="cta-input" type="text" placeholder="Your name & business type"/>
-      <button class="cta-btn" onclick="alert('Thank you! We will call you shortly on WhatsApp.')">Get Demo →</button>
+<!-- CONTACT -->
+<div id="contact" style="position:relative;overflow:hidden;background:var(--deep);">
+  <div style="position:absolute;inset:0;background-image:url('https://images.unsplash.com/photo-1497366216548-37526070297c?w=1600&q=70&fit=crop');background-size:cover;background-position:center;opacity:0.07;pointer-events:none;"></div>
+  <div class="section r">
+    <div class="s-eye">Contact &amp; Demonstrations</div>
+    <h2 class="s-head">Begin with a focused,<br>no-obligation demonstration.</h2>
+    <p class="s-sub">Share your industry and we will arrange a tailored demonstration of the most relevant products — at your premises or via video call.</p>
+    <div class="gold-rule"></div>
+    <div class="contact-wrap">
+      <div>
+        <div class="ci-list">
+          <div class="ci-row"><div class="ci-icon"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2A19.79 19.79 0 0113 18.93a19.5 19.5 0 01-6-6A19.79 19.79 0 013.12 6.18 2 2 0 015.09 4h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L9.09 11.9a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 18.92z"/></svg></div><div><div class="ci-lbl">Direct Line &amp; WhatsApp</div><div class="ci-val">+91 9814044220</div></div></div>
+          <div class="ci-row"><div class="ci-icon"><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div><div><div class="ci-lbl">Email</div><div class="ci-val">orbit.technologies.in@gmail.com</div></div></div>
+          <div class="ci-row"><div class="ci-icon"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div><div><div class="ci-lbl">Office</div><div class="ci-val">Amritsar, Punjab, India — 143001</div></div></div>
+          <div class="ci-row" style="border-bottom:none;"><div class="ci-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12,6 12,12 16,14"/></svg></div><div><div class="ci-lbl">Business Hours</div><div class="ci-val">Monday – Saturday, 9:30 AM – 7:00 PM</div></div></div>
+        </div>
+      </div>
+      <div>
+        <div class="cf-wrap">
+          <div class="cf-bar"></div>
+          <div class="cf-head"><div class="cf-title">Demonstration Request Form</div></div>
+          <div class="cf-body">
+            <div class="cf-row">
+              <input class="cf-in" type="text" placeholder="Full name"/>
+              <input class="cf-in" type="tel" placeholder="Mobile (WhatsApp)"/>
+            </div>
+            <input class="cf-in" type="text" placeholder="Business name"/>
+            <select class="cf-in cf-sel">
+              <option value="" disabled selected>Select your industry</option>
+              <option>Education / College / Institute</option>
+              <option>Jewellery / Goldsmith</option>
+              <option>Healthcare / Diagnostic Centre</option>
+              <option>Hospital / OPD</option>
+              <option>Trading / Distribution</option>
+              <option>Transport / Courier / Logistics</option>
+              <option>Restaurant / Bar / Dairy</option>
+              <option>Medical Shop / Pharma</option>
+              <option>Legal / Advocate Office</option>
+              <option>Chartered Accountant</option>
+              <option>Marketing / Advertising / Media</option>
+              <option>Immigration Services</option>
+              <option>Salon / Spa</option>
+              <option>Retail (Footwear / Textile / Tailoring)</option>
+              <option>Warehouse / Import-Export</option>
+              <option>Other</option>
+            </select>
+            <div class="cf-row">
+              <input class="cf-in" type="text" placeholder="City"/>
+              <input class="cf-in" type="text" placeholder="Preferred time"/>
+            </div>
+            <button class="cf-btn" onclick="this.textContent='Request Submitted ✓';this.style.background='#166534';">Submit Demonstration Request</button>
+          </div>
+          <p class="cf-note">Your information is treated with strict confidentiality and will not be shared with any third party.</p>
+        </div>
+      </div>
     </div>
-    <p class="cta-note">Or call / WhatsApp us directly: <strong>+91 98765 43210</strong> · Amritsar, Punjab</p>
   </div>
-</section>
+</div>
 
 <!-- FOOTER -->
 <footer>
-  <div class="footer-inner">
-    <div class="footer-top">
-      <div class="footer-brand">
-        <a href="#" class="logo" style="margin-bottom:14px;">
-          <div class="logo-icon">
-            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 2a10 10 0 100 20A10 10 0 0012 2z" opacity=".3" fill="white"/></svg>
-          </div>
-          Orbit Technologies
-        </a>
-        <p>Industry-specific software for Indian SMBs. Based in Amritsar, Punjab. Serving businesses across North India since 2003.</p>
-        <div class="footer-contact">
-          <a href="tel:+919876543210">📞 +91 98765 43210</a>
-          <a href="mailto:info@orbittechnologies.in">✉️ info@orbittechnologies.in</a>
-          <a href="#">📍 Amritsar, Punjab, India</a>
-        </div>
+  <div class="footer-w">
+    <div class="footer-grid">
+      <div>
+        <img src="images/logo.png" alt="Orbit Technologies" style="height:100px;width:100px;object-fit:contain"/>
+        <p class="fg-desc">Industry-specific software for Indian small and medium businesses. Headquartered in Amritsar, Punjab. In continuous operation since 2003. Simplifying Business. Powering Growth.</p>
       </div>
-      <div class="footer-col">
+      <div class="fg-col">
         <h4>Products</h4>
         <ul>
-          <li><a href="#">Orbit Jewels</a></li>
-          <li><a href="#">Orbit Lab</a></li>
-          <li><a href="#">Orbit Trader</a></li>
+          <li><a href="#">College ERP</a></li>
+          <li><a href="#">Diagnostic Management</a></li>
+          <li><a href="#">Hospital Management</a></li>
+          <li><a href="#">Goldsmith Software</a></li>
+          <li><a href="#">Restaurant POS</a></li>
           <li><a href="#">Orbit BI</a></li>
-          <li><a href="#">Orbit WA Gateway</a></li>
-          <li><a href="#">Orbit Salon</a></li>
+          <li><a href="#products">View All 31 →</a></li>
         </ul>
       </div>
-      <div class="footer-col">
+      <div class="fg-col">
         <h4>Industries</h4>
         <ul>
-          <li><a href="#">Jewellers</a></li>
-          <li><a href="#">Diagnostic Centres</a></li>
-          <li><a href="#">Traders</a></li>
-          <li><a href="#">Manufacturers</a></li>
-          <li><a href="#">Salons</a></li>
-          <li><a href="#">Restaurants</a></li>
+          <li><a href="#">Education</a></li>
+          <li><a href="#">Healthcare</a></li>
+          <li><a href="#">Jewellery</a></li>
+          <li><a href="#">Trade &amp; Logistics</a></li>
+          <li><a href="#">Professional Services</a></li>
+          <li><a href="#">Retail &amp; Industry</a></li>
         </ul>
       </div>
-      <div class="footer-col">
+      <div class="fg-col">
         <h4>Company</h4>
         <ul>
           <li><a href="#">About Us</a></li>
-          <li><a href="#">Our Clients</a></li>
-          <li><a href="#">AMC Plans</a></li>
-          <li><a href="#">Support</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#">Client Portfolio</a></li>
+          <li><a href="#">AMC &amp; Support Plans</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#">Privacy Policy</a></li>
         </ul>
       </div>
     </div>
-    <div class="footer-bottom">
-      <p>© 2025 Orbit Technologies, Amritsar. All rights reserved.</p>
-      <p style="color:#A0AECB;font-size:.82rem;">GST Compliant · WhatsApp Integrated · Made for Indian SMBs</p>
+    <div class="footer-bot">
+      <p class="fb-copy">&copy; 2025 Orbit Technologies, Amritsar. All rights reserved.</p>
+      <div class="fb-marks">
+        <span class="fb-mark">GST Compliant</span>
+        <span class="fb-mark">·</span>
+        <span class="fb-mark">WhatsApp Integrated</span>
+        <span class="fb-mark">·</span>
+        <span class="fb-mark">Made in Punjab</span>
+      </div>
     </div>
   </div>
 </footer>
 
-<!-- WhatsApp floating button -->
-<a href="https://wa.me/919876543210" class="wa-btn" target="_blank" title="Chat on WhatsApp">
+<!-- WhatsApp float -->
+<a href="https://wa.me/919814044220" class="wa" target="_blank" title="WhatsApp Enquiry">
   <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
 </a>
 
 <script>
-// Scroll fade-in
-const obs = new IntersectionObserver((entries) => {
-  entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('visible'); });
-}, {threshold: 0.1});
-document.querySelectorAll('.fade-in').forEach(el => obs.observe(el));
+const obs=new IntersectionObserver(e=>{e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('v');});},{threshold:0.07});
+document.querySelectorAll('.r,.r2').forEach(el=>obs.observe(el));
+
+function filterProds(cat,btn){
+  document.querySelectorAll('.prod-filter').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  document.querySelectorAll('.prod-card').forEach(c=>{
+    c.style.display=(cat==='all'||c.dataset.cat===cat)?'block':'none';
+  });
+}
 </script>
+
+<script>
+window.addEventListener('DOMContentLoaded', function() {
+  const cards = document.querySelectorAll('.prod-card');
+  cards.forEach(card => {
+    if(card.dataset.cat !== 'jewellery'){
+      card.style.display = 'none';
+    }
+  });
+});
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Orbit Technologies",
+  "url": "https://theorbit.co.in",
+  "logo": "https://theorbit.co.in/images/logo.png",
+  "description": "Orbit Technologies builds customised software after 
+    understanding your business data and workflow first. 
+    We do not sell standard software — we study your industry, 
+    your processes, and your data, then deliver a solution 
+    built exactly for you. 21 years experience across 15+ industries.",
+  "foundingDate": "2003",
+  "areaServed": ["Amritsar", "Punjab", "India"],
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Amritsar",
+    "addressRegion": "Punjab",
+    "postalCode": "143001",
+    "addressCountry": "IN"
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Customised Software Solutions",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "name": "Custom Business Software",
+        "description": "We understand your data and workflow first, then build"
+      },
+      {
+        "@type": "Offer", 
+        "name": "Orbit BI — AI Business Insights",
+        "description": "AI-powered insights from your existing accounting data"
+      },
+      {
+        "@type": "Offer",
+        "name": "Custom Web Application Development",
+        "description": "Web applications built after studying your business"
+      },
+      {
+        "@type": "Offer",
+        "name": "WhatsApp Automation",
+        "description": "Automated WhatsApp workflows customised for your process"
+      }
+    ]
+  },
+  "slogan": "We understand your business first. Then we build.",
+  "numberOfEmployees": "10",
+  "knowsAbout": [
+    "Custom Software Development",
+    "Business Data Analysis",
+    "AI Business Intelligence",
+    "Accounting Data Insights",
+    "Industry Specific Software",
+    "WhatsApp Automation"
+  ]
+}
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function(){
+
+    const container = document.getElementById("particles");
+
+    if(container){
+
+        const particleCount =
+            window.innerWidth < 640 ? 18 : 35;
+
+        for(let i = 0; i < particleCount; i++){
+
+            const particle =
+                document.createElement("span");
+
+            particle.className = "bg-particle";
+
+            particle.style.left =
+                Math.random() * 100 + "%";
+
+            particle.style.top =
+                (70 + Math.random() * 40) + "%";
+
+            const size =
+                2 + Math.random() * 3;
+
+            particle.style.width =
+                size + "px";
+
+            particle.style.height =
+                size + "px";
+
+            particle.style.animationDuration =
+                (7 + Math.random() * 10) + "s";
+
+            particle.style.animationDelay =
+                (-Math.random() * 10) + "s";
+
+            container.appendChild(particle);
+        }
+    }
+
+});
+</script>
+
 </body>
 </html>
